@@ -1,50 +1,51 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+#mountain{
+  width: 100%;
 }
 
-.title{
-    text-align: center;
-    font-size: 50px;
-    font-family:'Times New Roman', Times, serif;
-}
-.content{
-    text-align: center;
-    font-size: 30px;
-    font-family:  'Arial Narrow', Arial, sans-serif;
-}
-.india-map-img{
- margin-left: 16%;
- width: 250px;
-}
-.adventure-title{
+.title {
   text-align: center;
-    font-size: 50px;
-    font-family:'Times New Roman', Times, serif;
-}
-.title-content{
-  text-align: center;
-    font-size: 30px;
-    font-family:  'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-.adventure-card-image{
+.content {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.india-map-img {
+  margin-left: 16%;
+  width: 250px;
+}
+
+.adventure-title {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.title-content {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.adventure-card-image {
   width: 350px;
   height: 250px;
-  align-items:center; 
-}
- 
-.image-contaier{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  
-justify-content:space-evenly;
-
-
-
-
+  align-items: center;
 }
 
+.image-contaier {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
