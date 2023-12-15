@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: rgb(16, 0, 0);
+}
+nav {
+    background:transparent;
+    box-shadow: 0px 0px 3px 1px #2b2826;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 120px;
+    margin-top: 10px;
+    height:40px
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 3px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+.brand-name img{
+    height: 50px;
+}
+.tour-dropdown li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.tour-dropdown{
+    width: 7%;
+    background: #000;
+    position: absolute;
+    display: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    z-index: 10;
+}
+nav ul li:hover ul.tour-dropdown{
+    display: block;
+}
+
+.brand-name h2{
+    color: #ff004f;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Papyrus", Fantasy;
+    font-size: 28px;
+}
+.brand-name{
+    display: flex;
+    flex-direction: row;
+}
+
+.video{
+  
+    position: absolute;
+}
+.image-top {
+    margin: 0px;
+    height: 700px;
+    width: 100%;
+}
+
+.main-text{
+    position: relative;
+  bottom: 30%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+/*media queries*/
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 10px 50px;
+    }
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        background: #000;
+        position: fixed;
+        top: -400px;
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        padding-top: 50px;
+        transition: top 0.5s;
+        left: -10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+     }
+        }

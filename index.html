@@ -12,41 +12,8 @@
 </head>
 
 <body>
-  <nav>
-    <div class="brand-name">
-      <img src="./images/logo.jpg" class="logo">
-        
-    </div>
 
-    <ul id="sideMenu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Category 🔻</a>
-        <ul class="tour-dropdown">
-            <li><a href="#">Redwoods</a></li>
-            <li><a href="#">Beaches</a></li>
-            <li><a href="#">Hiking</a></li>
-            <li><a href="#">History</a></li>
-        </ul>
-        </li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Book Tour</a></li>
-        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-    </ul>
-    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-</nav>
-<script>
-    let sidemeu = document.getElementById("sideMenu");
-    function openMenu() {
-        sidemeu.style.top = "0";
-    }
-    function closeMenu() {
-        sidemeu.style.top = "-400px";
-    }
-</script>
-  
-  <video  width="1340px"  autoplay muted loop id="mountain+beaches">
+  <video width="1340px" autoplay muted loop id="mountain">
     <source src="mountain+beaches.mp4" type="video/mp4">
   </video>
 
@@ -57,7 +24,7 @@
   </p>
 
   <div class="india-map-img">
-    <img src="./images/map.jpg" />
+    <img src="map.jpg" />
   </div>
 
   <h1 class="adventure-title">START PLANNING YOUR ADVENTURE</h1>
@@ -67,19 +34,12 @@
   </p>
 
   <div class="image-contaier">
-    <img src="./images/temple2-img.jpg" class="adventure-card-image" />
-    <img src="./images/beache2-img.jpg" class="adventure-card-image" />
-    <img src="./images/mountain-img.webp" class="adventure-card-image" />
+    <img src="temple2-img.jpg" class="adventure-card-image" />
+    <img src="beache2-img.jpg" class="adventure-card-image" />
+    <img src="mountain-img.webp" class="adventure-card-image" />
   </div>
 
 
-
-
-
-
- 
-  
-  
 </body>
 
 </html>
