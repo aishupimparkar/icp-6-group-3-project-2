@@ -127,6 +127,8 @@ nav ul li:hover ul.tour-dropdown{
   width: 100%;
 }
 
+
+
 .title {
   text-align: center;
   font-size: 50px;
@@ -168,3 +170,5 @@ nav ul li:hover ul.tour-dropdown{
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+
