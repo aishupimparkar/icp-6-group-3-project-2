@@ -127,6 +127,25 @@ nav ul li:hover ul.tour-dropdown{
   width: 100%;
 }
 
+.video-titl{
+  position:relative;
+  margin-top: 80px;
+  height: 70px;
+  width: 90px;
+}
+.explore-title{
+  color: rgb(15, 14, 14);
+  font-size: 90px;
+  position: absolute;
+  width: 90px;
+  left: 90px;
+  top: 150px;
+  margin: 0 auto;
+ padding: 30px;
+
+ justify-content:center;
+}
+
 .title {
   text-align: center;
   font-size: 50px;
@@ -167,4 +186,13 @@ nav ul li:hover ul.tour-dropdown{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.Explore-img{
+ 
+  width: 900px;
+  height: 400px ;
+  margin-left: 210px;
+  margin-right: 210px;
+  margin-top: 15px;
 }
