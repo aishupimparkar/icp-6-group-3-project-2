@@ -136,8 +136,7 @@ nav ul li:hover ul.tour-dropdown{
   top: 150px;
   margin: 0 auto;
  padding: 30px;
-
-
+ margin-left: 350px;
 }
 
 .title {
@@ -155,6 +154,13 @@ nav ul li:hover ul.tour-dropdown{
 .india-map-img {
   margin-left: 16%;
   width: 250px;
+  cursor: pointer;
+}
+
+.india-map-img:hover{
+  background-color: #5c5c5e;
+  box-shadow: 0 0 7 #000;
+  transition: 0.5s;
 }
 
 .adventure-title {
@@ -173,6 +179,8 @@ nav ul li:hover ul.tour-dropdown{
   width: 350px;
   height: 250px;
   align-items: center;
+position: relative;
+ 
 }
 
 .image-contaier {
@@ -180,15 +188,52 @@ nav ul li:hover ul.tour-dropdown{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
+  
+}
+.text{
+  position: absolute;
+  font-size: 20px;
+  margin-top: 50px;
+  text-align: center;
+  
 }
 
+.adventure-card-image-2{
+  width: 350px;
+  height: 250px;
+  align-items: center;
+ position: relative;
+ 
+}
+.text-2{
+  position: absolute;
+  font-size: 20px;
+  margin-top: 50px;
+  text-align: center;
+ 
+}
+
+.adventure-card-image-3{
+  width: 350px;
+  height: 250px;
+  align-items: center;
+position: relative;
+}
+
+.text-3{
+  position: absolute;
+  font-size: 20px;
+  margin-top: 50px;
+  text-align: center;
+ 
+}
 
 
 .Explore-img{
  
   width: 900px;
   height: 400px ;
-  margin-left: 210px;
+  margin-left: 230px;
   margin-right: 210px;
   margin-top: 15px;
 }
@@ -203,9 +248,9 @@ nav ul li:hover ul.tour-dropdown{
   position: absolute;
   font-size: 15px;
   width: 100px;
-  left: 600px;
-  top: 0px;
-  margin: 0 auto;
+ left: 600px; 
+   top: 0px;
+ margin: 0 auto;
  padding: 6px;
 justify-content:center;
 background-color: #dfd5ca;
