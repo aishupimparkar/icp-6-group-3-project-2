@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/temples.css">
+</head>
+
+<body>
+    <nav>
+        <div class="brand-name">
+            <h2>Harshal Aglawe</h2>
+        </div>
+        <ul id="sideMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Category 🔻</a>
+                <ul class="tour-dropdown">
+                    <li><a href="#">Redwoods</a></li>
+                    <li><a href="#">Beaches</a></li>
+                    <li><a href="#">Hiking</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Boook Tour</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+
+
+    <div class="temples-box">
+        <img src="../images/maha-Templess.jpg" id="head-img">
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('maharashtra'), headImg('maharashtra')">Maharashtra</p>
+            <p class="tab-links" onclick="opentab('tamil-nadu'), headImg('tamil-nadu')">Tamil Nadu</p>
+            <p class="tab-links" onclick="opentab('karnataka'), headImg('karnataka')">Karnataka</p>
+            <p class="tab-links" onclick="opentab('madhya-pradesh'), headImg('madhya-pradesh')">Madhya Pradesh</p>
+            <p class="tab-links" onclick="opentab('assam'), headImg('assam')">Assam</p>
+            <p class="tab-links" onclick="opentab('uttarakhand'), headImg('uttarakhand')">Uttarakhand</p>
+            <p class="tab-links" onclick="opentab('gujarat'), headImg('gujarat')">Gujarat</p>
+        </div>
+        <div class="tab-contents active-tab" id="maharashtra">
+            <h1 class="sub-title">Maharashtra Temples</h1>
+            <div class="temple-card-box">
+                <div class="temple-card">
+                    <img src="../images/shirdi-temp.png">
+                    <h2>SHIRDI SAI BABA TEMPLE</h2>
+                    <p>The world famous Avenue of the Giants scenic drive is by far one of the most amazing array of
+                        redwoods in Humboldt County. The Avenue of Giants gives you access to countless hiking
+                        trailheads, picnic areas, rivers and groves. If you want to window shop, pick up some...</p>
+                    <h2 style="font-size: 20px;">Learn More</h2>
+                </div>
+                <div class="temple-card">
+                    <img src="../images/shirdi-temp.png">
+                    <h2>SHIRDI SAI BABA TEMPLE</h2>
+                    <p>The world famous Avenue of the Giants scenic drive is by far one of the most amazing array of
+                        redwoods in Humboldt County. The Avenue of Giants gives you access to countless hiking
+                        trailheads, picnic areas, rivers and groves. If you want to window shop, pick up some...</p>
+                    <h2 style="font-size: 20px;">Learn More</h2>
+                </div>
+                <div class="temple-card">
+                    <img src="../images/shirdi-temp.png">
+                    <h2>SHIRDI SAI BABA TEMPLE</h2>
+                    <p>The world famous Avenue of the Giants scenic drive is by far one of the most amazing array of
+                        redwoods in Humboldt County. The Avenue of Giants gives you access to countless hiking
+                        trailheads, picnic areas, rivers and groves. If you want to window shop, pick up some...</p>
+                    <h2 style="font-size: 20px;">Learn More</h2>
+                </div>
+                <div class="temple-card">
+                    <img src="../images/shirdi-temp.png">
+                    <h2>SHIRDI SAI BABA TEMPLE</h2>
+                    <p>The world famous Avenue of the Giants scenic drive is by far one of the most amazing array of
+                        redwoods in Humboldt County. The Avenue of Giants gives you access to countless hiking
+                        trailheads, picnic areas, rivers and groves. If you want to window shop, pick up some...</p>
+                    <h2 style="font-size: 20px;">Learn More</h2>
+                </div>
+            </div>
+        </div>
+        <div class="tab-contents" id="tamil-nadu">
+            <h1 class="sub-title">Tamil Nadu Temples</h1>
+        </div>
+        <div class="tab-contents" id="karnataka">
+            <h1 class="sub-title">Karnataka Temples</h1>
+        </div>
+        <div class="tab-contents" id="madhya-pradesh">
+            <h1 class="sub-title">Madhya Pradesh Temples</h1>
+        </div>
+        <div class="tab-contents" id="assam">
+            <h1 class="sub-title">Assam Temples</h1>
+        </div>
+        <div class="tab-contents" id="uttarakhand">
+            <h1 class="sub-title">Uttarakhand Temples</h1>
+        </div>
+        <div class="tab-contents" id="gujarat">
+            <h1 class="sub-title">Gujarat Temples</h1>
+        </div>
+    </div>
+
+    <script src="../js/temples.js"></script>
+    <script src="https://kit.fontawesome.com/4a24678c16.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
