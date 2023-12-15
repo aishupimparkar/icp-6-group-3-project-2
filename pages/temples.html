@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/temples.css">
+</head>
+
+<body>
+    <nav>
+        <div class="brand-name">
+            <h2>Harshal Aglawe</h2>
+        </div>
+        <ul id="sideMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Category 🔻</a>
+                <ul class="tour-dropdown">
+                    <li><a href="#">Redwoods</a></li>
+                    <li><a href="#">Beaches</a></li>
+                    <li><a href="#">Hiking</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Boook Tour</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+
+
+    <div class="temples-box">
+        <img src="../images/maha-Templess.jpg" id="head-img">
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('maharashtra'), headImg('maharashtra')">Maharashtra</p>
+            <p class="tab-links" onclick="opentab('tamil-nadu'), headImg('tamil-nadu')">Tamil Nadu</p>
+            <p class="tab-links" onclick="opentab('karnataka'), headImg('karnataka')">Karnataka</p>
+            <p class="tab-links" onclick="opentab('madhya-pradesh'), headImg('madhya-pradesh')">Madhya Pradesh</p>
+            <p class="tab-links" onclick="opentab('assam'), headImg('assam')">Assam</p>
+            <p class="tab-links" onclick="opentab('uttarakhand'), headImg('uttarakhand')">Uttarakhand</p>
+            <p class="tab-links" onclick="opentab('gujarat'), headImg('gujarat')">Gujarat</p>
+        </div>
+        <div class="tab-contents active-tab" id="maharashtra">
+            <h1 class="sub-title">Maharashtra Temples</h1>
+            <div class="temple-card-box">
+                <div class="temple-card">
+                    <img src="../images/shirdi-temp.png">
+                    <h2>SHIRDI SAI BABA TEMPLE</h2>
+                    <p>The world famous Avenue of the Giants scenic drive is by far one of the most amazing array of
+                        redwoods in Humboldt County. The Avenue of Giants gives you access to countless hiking
+                        trailheads, picnic areas, rivers and groves. If you want to window shop, pick up some...</p>
+                    <h2 style="font-size: 20px;">Learn More</h2>
+                </div>
+                <div class="temple-card">
+                    <img src="../images/shirdi-temp.png">
+                    <h2>SHIRDI SAI BABA TEMPLE</h2>
+                    <p>The world famous Avenue of the Giants scenic drive is by far one of the most amazing array of
+                        redwoods in Humboldt County. The Avenue of Giants gives you access to countless hiking
+                        trailheads, picnic areas, rivers and groves. If you want to window shop, pick up some...</p>
+                    <h2 style="font-size: 20px;">Learn More</h2>
+                </div>
+                <div class="temple-card">
+                    <img src="../images/shirdi-temp.png">
+                    <h2>SHIRDI SAI BABA TEMPLE</h2>
+                    <p>The world famous Avenue of the Giants scenic drive is by far one of the most amazing array of
+                        redwoods in Humboldt County. The Avenue of Giants gives you access to countless hiking
+                        trailheads, picnic areas, rivers and groves. If you want to window shop, pick up some...</p>
+                    <h2 style="font-size: 20px;">Learn More</h2>
+                </div>
+                <div class="temple-card">
+                    <img src="../images/shirdi-temp.png">
+                    <h2>SHIRDI SAI BABA TEMPLE</h2>
+                    <p>The world famous Avenue of the Giants scenic drive is by far one of the most amazing array of
+                        redwoods in Humboldt County. The Avenue of Giants gives you access to countless hiking
+                        trailheads, picnic areas, rivers and groves. If you want to window shop, pick up some...</p>
+                    <h2 style="font-size: 20px;">Learn More</h2>
+                </div>
+            </div>
+        </div>
+        <div class="tab-contents" id="tamil-nadu">
+            <h1 class="sub-title">Tamil Nadu Temples</h1>
+            <div class="temple-card-box">
+                <div class="temple-card">
+                    <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/05/Sri-Ranganathaswamy-Temple-Srirangam.jpg">
+                    <h2>SRI RANGANATHASWAMY TEMPLE</h2>
+                    <p>Dedicated to Lord Vishnu, the 'Ranganathaswamy Temple' located on the Srirangam Island of the Tiruchirappalli city in Tamilnadu, is another masterpiece of Dravidian architecture. Spread across an area of over 150 acres, the temple has 49 sub-shrines ...</p>
+                    <h2 style="font-size: 20px;">Learn More</h2>
+                </div>
+                <div class="temple-card">
+                    <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/05/Meenakshi-Amman-Temple-Madurai.jpg">
+                    <h2>MEENAKSHI AMMAN TEMPLE</h2>
+                    <p>Dedicated to Goddess Parvati in the form of Meenakshi and her consort, Lord Shiva in the form of Lord Sundareswarar, the Meenakshi Amman Temple is one of the most ancient and famous temples not only in Tamil Nadu but, in entire India...</p>
+                    <h2 style="font-size: 20px;">Learn More</h2>
+                </div>
+                <div class="temple-card">
+                    <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/05/Rameshwaram-Jyotirlinga-Temple.jpg">
+                    <h2>RAMANATHASWAMY TEMPLE</h2>
+                    <p>One of the four primary pilgrimage destinations ('Char Dhams') for all Hindus across the world, the 'Ramanathaswamy Temple' is swarmed by hordes of pilgrims every day. Besides being one of the holy 'Chardham', the temple is also counted amongst the 12 sacred Jyotirlingas of Lord Shiva...</p>
+                    <h2 style="font-size: 20px;">Learn More</h2>
+                </div>
+                <div class="temple-card">
+                    <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/05/Adi-Kumbeswarar-Temple-Kumbakonam.jpg">
+                    <h2>ADI KUMBESWARAR TEMPLE</h2>
+                    <p>The grandeur of Chola dynasty is still intact in the form of divine Adi Kumbeswarar temple. It's an exquisite Dravidian style masterpiece which was renovated by Govinda Dikshitar, chief of Achutha Nayakar of Thanjavur in 16th century AD. The temple is dedicated to Lord Shiva...</p>
+                    <h2 style="font-size: 20px;">Learn More</h2>
+                </div>
+                <div class="temple-card">
+                    <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/05/Brihadeeswarar-Temple-Thanjavur.jpg">
+                    <h2>BRIHADEESWARAR TEMPLE</h2>
+                    <p>The 'Brihadeeswarar Temple' is a delightful abode of Lord Shiva and is located in the Thanjavur district of Tamil Nadu. It is one of the largest temples in India. This brilliant creation of the Chola dynasty in the 11th century AD stands tall as a testimony to the opulence and grandeur of the Chola rulers...</p>
+                    <h2 style="font-size: 20px;">Learn More</h2>
+                </div>
+                <div class="temple-card">
+                    <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/05/Kanchi-Kailasanathar-Temple-Kanchipuram.jpg">
+                    <h2>KANCHI KAILASANATHAR TEMPLE</h2>Ramanathaswamy Temple
+                    <p>Kanchipuram, the ancient town of Tamil Nadu has been luring divinely inspired travellers to its divine shores where temples tell the mystic tales of Gods and behind their creation the grandeur and artistic brilliance of Pallava Dynasty. You will see some of the best temples from the period of Pallavas...</p>
+                    <h2 style="font-size: 20px;">Learn More</h2>
+                </div>
+            </div>
+        </div>
+        <div class="tab-contents" id="karnataka">
+            <h1 class="sub-title">Karnataka Temples</h1>
+        </div>
+        <div class="tab-contents" id="madhya-pradesh">
+            <h1 class="sub-title">Madhya Pradesh Temples</h1>
+        </div>
+        <div class="tab-contents" id="assam">
+            <h1 class="sub-title">Assam Temples</h1>
+        </div>
+        <div class="tab-contents" id="uttarakhand">
+            <h1 class="sub-title">Uttarakhand Temples</h1>
+        </div>
+        <div class="tab-contents" id="gujarat">
+            <h1 class="sub-title">Gujarat Temples</h1>
+        </div>
+    </div>
+
+    <script src="../js/temples.js"></script>
+    <script src="https://kit.fontawesome.com/4a24678c16.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
