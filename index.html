@@ -12,41 +12,88 @@
 </head>
 
 <body>
+  <nav>
+    <div class="brand-name">
+       <img src="./images/logo.jpg" class="logo">
+    </div>
+    <ul id="sideMenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Category ▼ </a>
+        <ul class="tour-dropdown">
+            <li><a href="#">Redwoods</a></li>
+            <li><a href="#">Beaches</a></li>
+            <li><a href="#">Hiking</a></li>
+            <li><a href="#">History</a></li>
+        </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Boook Tour</a></li>
+        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+</nav>
+<script>
+    let sidemeu = document.getElementById("sideMenu");
+    function openMenu() {
+        sidemeu.style.top = "0";
+    }
+    function closeMenu() {
+        sidemeu.style.top = "-400px";
+    }
+</script>
 
   <video width="1340px" autoplay muted loop id="mountain">
-    <source src="mountain+beaches.mp4" type="video/mp4">
+    <source src="./images/mountain+beaches.mp4" type="video/mp4">
   </video>
+  <div class="video-title">
+    <h1 class="explore-title">Explore India Now</h1>
+  </div>
 
   <h1 class="title">Get to know the county</h1>
 
   <p class="content">
-    To prepare youreself for the upcoming adventure, wander through each of region of
+    To prepare youreself for the upcoming adventure, wander through each of region of Wanderlust county.
   </p>
 
   <div class="india-map-img">
-    <img src="map.jpg" />
+    <img src="./images/map.jpg" />
   </div>
 
   <h1 class="adventure-title">START PLANNING YOUR ADVENTURE</h1>
 
   <p class="title-content">
-    Select a Category below to uncover the endless activities has to offer.
+    Select a Category below to uncover the endless activities Wanderlust has to offer.
   </p>
 
   <div class="image-contaier">
-    <img src="temple2-img.jpg" class="adventure-card-image" />
-    <img src="beache2-img.jpg" class="adventure-card-image" />
-    <img src="mountain-img.webp" class="adventure-card-image" />
+    <img src="./images/temple2-img.jpg" class="adventure-card-image" />
+   
+    <img src="./images/beache2-img.jpg" class="adventure-card-image" />
+    
+   <img src="./images/mountain-img.webp" class="adventure-card-image" />
+
+   <img src="./images/hiking-img.jpg" class="adventure-card-image" />  
+
+   <img src="./images/historical-img.jpg" class="adventure-card-image" />  
+    
+   <img src="./images/red-woods.jpg" class="adventure-card-image" />  
+ 
+    
+
   </div>
+    <img src="./images/explore-3.jpg" class="Explore-img"/>
+
+    <div class="btn-container">
+      <button type="button" class="btn" >Learn More</button>
+    </div>
+    
+    </body>
+    
+    </html>
 
 
 
 
-
-
-
-
-
-</body>
-
-</html>
+ 

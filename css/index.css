@@ -2,16 +2,148 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(192, 235, 221);
+
+}
+nav {
+  background: #e5e3e3;
+  box-shadow: 0px 0px 3px 1px #2b2826;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 120px;
+
+
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+.brand-name {
+ align-items: start;
+}
+.logo{
+width: 90px;
+height: 70px;
+
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 3px 20px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.4s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.tour-dropdown li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 0;
+  font-size: 18px;
+}
+.tour-dropdown{
+  width: 7%;
+  background: #bababa;
+  position: absolute;
+  display: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+}
+nav ul li:hover ul.tour-dropdown{
+  display: block;
+}
+
+
+.brand-name{
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+      padding: 10px 50px;
+  }
+  nav .fa-solid {
+      display: block;
+      font-size: 25px;
+      cursor: pointer;
+  }
+
+  nav ul {
+      background: #000;
+      position: fixed;
+      top: -400px;
+      width: 100%;
+      height: auto;
+      margin-top: 0;
+      padding-top: 50px;
+      transition: top 0.5s;
+      left: -10px;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 25px;
+  }
+
+  nav ul .fa-solid {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+  }
 
 }
 #mountain{
   width: 100%;
 }
 
+.video-title{
+  position:relative;
+  margin-top: 90px;
+  height: 70px;
+  width: 90px;
+}
+.explore-title{
+  color: rgb(15, 14, 14);
+  font-size: 60px;
+  position: absolute;
+  width: 90px;
+  left: 90px;
+  top: 10px;
+  margin: 0 auto;
+ padding: 30px;
+ margin-left: 350px;
+}
+
 .title {
   text-align: center;
   font-size: 50px;
   font-family: 'Times New Roman', Times, serif;
+  margin-top: 10px;
 }
 
 .content {
@@ -22,7 +154,14 @@ body {
 
 .india-map-img {
   margin-left: 16%;
-  width: 250px;
+  width: 250px; 
+}
+@media screen and (min-width:400px) and (max-width:768px){
+.india-map-img{
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 
 .adventure-title {
@@ -37,15 +176,58 @@ body {
   font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
-.adventure-card-image {
-  width: 350px;
-  height: 250px;
-  align-items: center;
-}
-
 .image-contaier {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
+  
+}
+
+.adventure-card-image {
+  width: 340px;
+  height: 250px;
+  align-items: start;
+  position: relative;
+  margin-top: 20px;
+}
+
+.Explore-img{
+ 
+  width: 900px;
+  height: 400px ;
+  margin-left: 230px;
+  margin-right: 210px;
+  margin-top: 15px;
+}
+
+.btn-container{
+  position:relative;
+  margin-top: 0px;
+  bottom: 130px;
+}
+
+.btn{
+  position: absolute;
+  font-size: 15px;
+  width: 100px;
+ left: 630px; 
+   top: 0px;
+ margin: 0 auto;
+ padding: 6px;
+justify-content:center;
+background-color: #dfd5ca;
+border: #dfd5ca;
+cursor: pointer;
+display: inline-flex;
+flex-wrap: wrap;
+ font-family:Georgia, 'Times New Roman', Times, serif;
+ 
+}
+
+.btn:hover{
+  background-color: #25282b;
+  color: wheat;
+  transition: 0.5s;
+  box-shadow: 1px 1px 2px 2px gray;
 }
