@@ -37,7 +37,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #242222;
+  color: #000000;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -121,9 +121,9 @@ nav ul li:hover ul.tour-dropdown{
   width: 100%;
 }
 
-.video-titl{
+.video-title{
   position:relative;
-  margin-top: 80px;
+  margin-top: 90px;
   height: 70px;
   width: 90px;
 }
@@ -133,7 +133,7 @@ nav ul li:hover ul.tour-dropdown{
   position: absolute;
   width: 90px;
   left: 90px;
-  top: 150px;
+  top: 10px;
   margin: 0 auto;
  padding: 30px;
  margin-left: 350px;
@@ -143,6 +143,7 @@ nav ul li:hover ul.tour-dropdown{
   text-align: center;
   font-size: 50px;
   font-family: 'Times New Roman', Times, serif;
+  margin-top: 10px;
 }
 
 .content {
@@ -153,14 +154,14 @@ nav ul li:hover ul.tour-dropdown{
 
 .india-map-img {
   margin-left: 16%;
-  width: 250px;
-  cursor: pointer;
+  width: 250px; 
 }
-
-.india-map-img:hover{
-  background-color: #5c5c5e;
-  box-shadow: 0 0 7 #000;
-  transition: 0.5s;
+@media screen and (min-width:400px) and (max-width:768px){
+.india-map-img{
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 
 .adventure-title {
@@ -175,14 +176,6 @@ nav ul li:hover ul.tour-dropdown{
   font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
-.adventure-card-image {
-  width: 350px;
-  height: 250px;
-  align-items: center;
-position: relative;
- 
-}
-
 .image-contaier {
   display: flex;
   flex-wrap: wrap;
@@ -190,44 +183,14 @@ position: relative;
   justify-content: space-evenly;
   
 }
-.text{
-  position: absolute;
-  font-size: 20px;
-  margin-top: 50px;
-  text-align: center;
-  
-}
 
-.adventure-card-image-2{
-  width: 350px;
+.adventure-card-image {
+  width: 340px;
   height: 250px;
-  align-items: center;
- position: relative;
- 
+  align-items: start;
+  position: relative;
+  margin-top: 20px;
 }
-.text-2{
-  position: absolute;
-  font-size: 20px;
-  margin-top: 50px;
-  text-align: center;
- 
-}
-
-.adventure-card-image-3{
-  width: 350px;
-  height: 250px;
-  align-items: center;
-position: relative;
-}
-
-.text-3{
-  position: absolute;
-  font-size: 20px;
-  margin-top: 50px;
-  text-align: center;
- 
-}
-
 
 .Explore-img{
  
@@ -248,7 +211,7 @@ position: relative;
   position: absolute;
   font-size: 15px;
   width: 100px;
- left: 600px; 
+ left: 630px; 
    top: 0px;
  margin: 0 auto;
  padding: 6px;
