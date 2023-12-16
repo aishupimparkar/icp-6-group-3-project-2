@@ -1,0 +1,70 @@
+.{
+    margin: 0;
+    padding: 0;
+}
+
+.h1{
+    text-align: center;
+    margin: 40px 0 ;
+    margin: 0 10px;
+    color: #fff;
+    font-family: ;
+    font-size: ;
+    margin-bottom: 20px;
+}
+
+.main-form{
+    margin: 10px 25px;
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+}
+
+.main-form {
+    width: 100%;
+    font-family: ;
+    background: none;
+    border: 1px solid #ffca00;
+    font-size: ;
+    color: #fff;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form {
+    width: 100%;
+    font-family: ;
+    font-family: ;
+    background: none;
+    border: 1px solid #ffca00;
+    font-size: ;
+    color: #fff;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form {
+    width: 100%;
+    font-family: ;
+    color: #fff;
+    font-size: 25px;
+}
+
+.submit {
+    font-family: ;
+    text-align: center;
+    width: 200px;
+    background-color: yellow;
+    color: black;
+    transition: all .3s;
+}
+.submit:hover{
+    font-family: ;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+}
+.submit:active{
+    font-size: 19px;
+    background-color: black;
+    color: #fff;
+}
