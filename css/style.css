@@ -1,0 +1,68 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+body
+{
+    background: linear-gradient(99deg,#0e3959 0%,#0e3959 30%,#03a9f5 30%, #03a9f5 100%);
+}
+.ContactUs
+{
+    position: relative;
+    width: 100px;
+    padding: 40px 100px;
+}
+.ContactUs .title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.ContactUs .title h2
+{
+    color: #fff;
+    font-weight: 500;
+}
+.form
+{
+    grid-area: form;
+}
+.info
+{
+    grid-area: info;
+}
+.map
+{
+    grid-area: map;
+}
+.box
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+    "form info"
+    "form map";
+}
+.contact h3
+{
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.4px;
+    margin-bottom: 10px;
+}
+/* form */
+.formbox
+{
+    position: relative;
+    width: 100px;
+}
+.formbox .row50
+{
+    display: flex;
+}
