@@ -47,12 +47,25 @@ function headImg(name) {
     }
 }
 
-
+let next = 1;
 function hillStationImg(){
-    let ver = 1;
     const imgElement = document.getElementById("hill-station-head-img");
-    if (ver == 1) {
+    if (next == 1) {
         imgElement.src = "https://www.tourmyindia.com/blog//wp-content/uploads/2020/12/Munnar-Hill-Station-Kerala.jpg";
-        ++ver;
+        ++next;
+    }
+    else if (next == 2) {
+        imgElement.src = "https://www.tourmyindia.com/blog//wp-content/uploads/2022/08/Best-Hill-Stations-to-Explore-in-India.jpg";
+    }
+}
+function hillStationImgBef(){
+    const imgElement = document.getElementById("hill-station-head-img");
+    if (next == 1) {
+        imgElement.src = "https://www.tourmyindia.com/blog//wp-content/uploads/2020/12/Darjeeling-Hill-Station.jpg";
+        next = 1;
+    }
+    else if (next == 2) {
+        imgElement.src = "https://www.tourmyindia.com/blog//wp-content/uploads/2020/12/Munnar-Hill-Station-Kerala.jpg";
+        --next;
     }
 }
