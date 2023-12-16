@@ -46,3 +46,13 @@ function headImg(name) {
         imgElement.src = "../images/somnath-temple.jpg";
     }
 }
+
+
+function hillStationImg(){
+    let ver = 1;
+    const imgElement = document.getElementById("hill-station-head-img");
+    if (ver == 1) {
+        imgElement.src = "https://www.tourmyindia.com/blog//wp-content/uploads/2020/12/Munnar-Hill-Station-Kerala.jpg";
+        ++ver;
+    }
+}

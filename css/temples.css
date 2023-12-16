@@ -85,12 +85,9 @@ nav ul li:hover ul.tour-dropdown {
     display: block;
 }
 
-.brand-name h2 {
-    color: #ff004f;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-family: "Papyrus", Fantasy;
-    font-size: 28px;
+.brand-name img {
+    width: 90px;
+    height: 70px;
 }
 
 .brand-name {
