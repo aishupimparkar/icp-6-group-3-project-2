@@ -1,62 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/temples.css">
   <title>Contact Us</title>
   <link rel="stylesheet" href="style.css">
-  
+
 </head>
+
 <body>
+  <nav style="position: relative; margin-top: 5px; margin-bottom: 50px;">
+    <div class="brand-name">
+      <img src="../images/logo.jpg">
+    </div>
+    <ul id="sideMenu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./temples.html">Category ▼</a>
+        <ul class="tour-dropdown">
+          <li><a href="./temples.html">Temples</a></li>
+          <li><a href="./beaches.html">Beaches</a></li>
+          <li><a href="./hill-stations.html">Hill Stations</a></li>
+          <li><a href="./history.html">History</a></li>
+        </ul>
+      </li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="./book now.html">Boook Tour</a></li>
+      <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+  </nav>
+
+
+
+
   <div class="ContactUs">
     <div class="title">
       <h2>Get In Touch</h2>
-  </div>
-  <div class="box">
-    <!-- form -->
-    <div class="contact form"></div>
-     <h3>Send a Message</h3>
-     <form>
-      <div class="formbox">
-        <div class="row50">
-          <div class="inputbox">
-            <span>First Name</span>
-            <input type="text" placeholder="pranali">
-          </div>
-          <div class="inputbox">
-            <span>Last Name</span>
-            <input type="text" placeholder="hon">
-        </div>
-      </div>
-      <div class="row50">
-        <div class="inputbox">
-          <span>Email</span>
-          <input type="text" placeholder="pranali@gmail.com">
-
-        </div>
-        <div class="inputbox">
-          <span>Mobile</span>
-          <input type="text" placeholder="+91 987 654 3210">
-        </div>
-       </div>
-       <div class="row100">
-        <div class="inputbox">
-          <span>Message</span>
-          <textarea placeholder="Write Your Message Here"></textarea>
-        </div>
-       </div>
-       <div class="row100">
-        <div class="inputbox">
-          <input type="submit" value="Send">
-        </div>
-       </div>
-       </div>
-       </form>
-       </div>
-       </div>
-       <div class="contact info"></div>
-        <div class="contact map"></div>
-        </div> 
     </div>
+    <div class="box">
+      <!-- form -->
+      <div class="contact form"></div>
+      <h3>Send a Message</h3>
+      <form>
+        <div class="formbox">
+          <div class="row50">
+            <div class="inputbox">
+              <span>First Name</span>
+              <input type="text" placeholder="pranali">
+            </div>
+            <div class="inputbox">
+              <span>Last Name</span>
+              <input type="text" placeholder="hon">
+            </div>
+          </div>
+          <div class="row50">
+            <div class="inputbox">
+              <span>Email</span>
+              <input type="text" placeholder="pranali@gmail.com">
+
+            </div>
+            <div class="inputbox">
+              <span>Mobile</span>
+              <input type="text" placeholder="+91 987 654 3210">
+            </div>
+          </div>
+          <div class="row100">
+            <div class="inputbox">
+              <span>Message</span>
+              <textarea placeholder="Write Your Message Here"></textarea>
+            </div>
+          </div>
+          <div class="row100">
+            <div class="inputbox">
+              <input type="submit" value="Send">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="contact info"></div>
+  <div class="contact map"></div>
+  </div>
+  </div>
 </body>
+
 </html>
