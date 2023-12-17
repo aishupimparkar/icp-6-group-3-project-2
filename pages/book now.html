@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Now</title>
+    <link rel="stylesheet" herf="book_now.css">
     <style type="text/css">
         body{
             background-image: url("https://adm.dookinternational.com/dook/images/country/XYwKYrjh1656324286.jpg");
@@ -11,8 +12,9 @@
     </style>
 </head>
 <body>
-    <div><h1>Book Now</h1></div>
 <div class="main-form">
+   <form id="main-form">
+      <h1>BOOK YOUR TOUR</h1>
      <div>
         <span>Your full name ?</span></br>
         <input type="text" name="name" id="name" placeholder="Write your name here...">
@@ -34,21 +36,34 @@
         <!-- <---this is the select option--->
      </div></br>
      <div>
-        <span>What time ?</span></br>
+            <span>What time ?</span></br>
         <input type="text" name="time" id="time" placeholder="Time">
      </div></br>
      <div>
-        <span>What is date</span></br>
+        <span>What is date ?</span></br>
         <input type="date" name="date" id="date" placeholder="date" required>
      </div></br>
      <div>
         <span>Your phone number</span></br>
         <input type="number" name="number" id="number" placeholder="Write your number here..."required>
      </div></br>
-     <div id="submit">
-        <input type="submit" value="SUBMIT" id="name">
+
+     <div>
+      <span>Number Of Ticket You Want To Book</span>
+
+     </div>
+
+     <div class="submit">
+        <button type="submit" class="btn" onclick="openPopup()">SUBMIT</button>
+        <div class="popup">
+         <img src="../img/yes.png">
+         <h2>Thank You</h2>
+         <p>Your details has been successfully submitted. Thanks!</p>
+         <button type="button" onclick="closePopup()">OK</button>
+        </div>
      </div></br>
-    
-</div>
+   </div>
+   </form>
+   <script src="./book_now.js"></script>
 </body>
 </html>
