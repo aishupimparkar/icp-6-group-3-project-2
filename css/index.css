@@ -2,8 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(192, 235, 221);
-
+  background-color: #ebf9f2;
 }
 
 nav {
@@ -113,7 +112,7 @@ nav ul li:hover ul.tour-dropdown {
  text-align: center;
  font-family:  Verdana, Arial, Helvetica, sans-serif;
   top:-600px ;
-  margin: 0 auto;
+
  padding: 20px;
  margin-left: 290px;
  
@@ -149,13 +148,13 @@ nav ul li:hover ul.tour-dropdown {
 .adventure-title {
   text-align: center;
   font-size: 50px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .title-content {
   text-align: center;
   font-size: 30px;
-  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .image-contaier {
@@ -177,7 +176,7 @@ nav ul li:hover ul.tour-dropdown {
   cursor: pointer;
 }
 .adventure-card-image:hover{
-  box-shadow: 2px 2px 15px 10px #313232;
+  box-shadow: 2px 2px 10px 10px #313232;
 }
 
 .card-container{
@@ -203,9 +202,9 @@ display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
+ 
   
 }
-
 
 
 .btn{
@@ -215,19 +214,60 @@ display: block;
  display: block;
  padding: 6px 15px;
  margin-left: 620px;
-  background-color: #dfd5ca;
+  background-color: #000000;
  border: 1px solid #dfd5ca;
  cursor: pointer;
  font-family:Georgia, 'Times New Roman', Times, serif;
- 
+ color: #dfd5ca;
 }
 
 .btn:hover{
-  background-color: #25282b;
-  color: wheat;
+  background-color: #f1f4f7;
+  color: rgb(15, 14, 14);
   transition: 0.5s;
-  box-shadow: 1px 1px 2px 2px gray;
+  box-shadow: 1px 1px 2px 2px rgb(16, 16, 16);
 }
-@media screen {
+@media screen and (max-width: 600px) {
+  nav {
+      padding: 10px 50px;
+  }
+  nav .fa-solid {
+      display: block;
+      font-size: 25px;
+      cursor: pointer;
+  }
+
+  nav ul {
+      background: #000;
+      position: fixed;
+      top: -400px;
+      width: 100%;
+      height: auto;
+      margin-top: 0;
+      padding-top: 50px;
+      transition: top 0.5s;
+      left: -10px;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 25px;
+  }
+
+  nav ul .fa-solid {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+  }
+}
+@media screen and ( min-width:445px) and (max-width:654px) {
+  .india-map-img img{
+
+  }
+
+
+
+
+}
   
-}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up form</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+    <nav>
+        <div class="brand-name">
+          <img src="./images/logo.jpg" class="logo">
+    
+        </div>
+    
+        <ul id="sideMenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Category ▼ </a>
+            <ul class="tour-dropdown">
+              <li><a href="../js/temples.js">Temple</a></li>
+              <li><a href="../pages/beaches.html">Beaches</a></li>
+              <li><a href="#">Hiking</a></li>
+              <li><a href="#">Historical</a></li>
+              <li><a href="#">Water activities</a></li>
+              <li><a href="./pages/hill-stations.html">Hill station</a></li>
+            </ul>
+          </li>
+          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="./pages/login.html">Login</a></li>
+          <li><a href="./pages/book now.html">Boook Tour</a></li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    
+    
+    
+      </nav>
+    
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Login</h1>
+            <form>
+                <div class="input-grup">
+                    <div class="input-field" id="namefield">
+                        <img class="icon " src="../images/user3.jpg"/>
+                        <input type="text" placeholder=" Username">
+                    </div>
+
+                    <div class="input-field">
+                        <img class="email-icon" src="../images/password4.jpg"/>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-field">
+                        <img class="icon" src="../images/lock1.jpg"/>
+                        <input type="password" placeholder="password">
+                    </div>
+                    
+                </div>
+                   <div class="btn-field">
+                       <button type="button" onclick="alert('you have been successfully signup')">login</button>
+                   </div>
+
+                   
+                
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
