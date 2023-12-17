@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css"
-    <title></title>
+    <link rel="stylesheet" href="../css/temples.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>About</title>
+
     <style>
         body{
             margin: 0px;
@@ -23,7 +25,7 @@
             color: #ff6347;
             font-size: 55px;
             text-align: center;
-            margin-top: 35px;
+            margin-top: 100px;
 
         }
         .container{
@@ -31,8 +33,7 @@
             justify-content: center;
             align-items: center;
             margin: 65px auto;
-        
-            
+            padding: 0 100px;
         }
         .hero-content{
             flex: 1;
@@ -124,6 +125,32 @@
     </style>
 </head>
 <body>
+    <nav>
+        <div class="brand-name">
+            <img src="../images/logo.jpg">
+        </div>
+        <ul id="sideMenu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./temples.html">Category ▼</a>
+                <ul class="tour-dropdown">
+                    <li><a href="./temples.html">Temples</a></li>
+                    <li><a href="./beaches.html">Beaches</a></li>
+                    <li><a href="./hill-stations.html">Hill Stations</a></li>
+                    <li><a href="./history.html">History</a></li>
+                </ul>
+            </li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="./book now.html">Boook Tour</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+
+
+
+
     <section class="hero"> 
         <div class="heading"> 
             <h1>About Us </h1>
@@ -135,9 +162,7 @@
                 <button class="cta-button"> Learn More</button>
             </div>
             <div class="hero-image">
-                <img src="../images/office.png.png"
-            
-                
+                <img src="../images/office.png.png">
             </div>
         </div>
     </section>
