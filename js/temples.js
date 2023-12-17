@@ -28,7 +28,7 @@ function headImg(name) {
         imgElement.src = "../images/maha-Templess.jpg";
     }
     else if (name == "tamil-nadu") {
-        imgElement.src = "../images/sri-ramanathaswamy-temple.jpg";
+        imgElement.src = "https://tourismtn.com/wp-content/uploads/2021/01/Thanjai.jpg";
     }
     else if (name == "karnataka") {
         imgElement.src = "../images/Virupaksha-Temple.jpg";
@@ -47,25 +47,3 @@ function headImg(name) {
     }
 }
 
-let next = 1;
-function hillStationImg(){
-    const imgElement = document.getElementById("hill-station-head-img");
-    if (next == 1) {
-        imgElement.src = "https://www.tourmyindia.com/blog//wp-content/uploads/2020/12/Munnar-Hill-Station-Kerala.jpg";
-        ++next;
-    }
-    else if (next == 2) {
-        imgElement.src = "https://www.tourmyindia.com/blog//wp-content/uploads/2022/08/Best-Hill-Stations-to-Explore-in-India.jpg";
-    }
-}
-function hillStationImgBef(){
-    const imgElement = document.getElementById("hill-station-head-img");
-    if (next == 1) {
-        imgElement.src = "https://www.tourmyindia.com/blog//wp-content/uploads/2020/12/Darjeeling-Hill-Station.jpg";
-        next = 1;
-    }
-    else if (next == 2) {
-        imgElement.src = "https://www.tourmyindia.com/blog//wp-content/uploads/2020/12/Munnar-Hill-Station-Kerala.jpg";
-        --next;
-    }
-}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Now</title>
     <link rel="stylesheet" herf="../css/book_now.css">
+    <link rel="stylesheet" href="../css/temples.css">
     <style type="text/css">
         body{
             background-image: url("https://adm.dookinternational.com/dook/images/country/XYwKYrjh1656324286.jpg");
@@ -12,6 +13,31 @@
     </style>
 </head>
 <body>
+   <nav style="position: relative; margin-top: 5px; margin-bottom: 50px;">
+      <div class="brand-name">
+        <img src="../images/logo.jpg">
+      </div>
+      <ul id="sideMenu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./temples.html">Category ▼</a>
+          <ul class="tour-dropdown">
+            <li><a href="./temples.html">Temples</a></li>
+            <li><a href="./beaches.html">Beaches</a></li>
+            <li><a href="./hill-stations.html">Hill Stations</a></li>
+            <li><a href="./history.html">History</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="./book now.html">Boook Tour</a></li>
+        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+
+
+
 <div class="main-form">
    <form id="main-form">
       <h1>BOOK YOUR TOUR</h1>
