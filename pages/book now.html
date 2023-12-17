@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" herf="book_now.css">
+    <style type="text/css">
+        body{
+            background-image: url("https://adm.dookinternational.com/dook/images/country/XYwKYrjh1656324286.jpg");
+        }
+    </style>
+</head>
+<body>
+<div class="main-form">
+   <form id="main-form">
+      <h1>BOOK YOUR TOUR</h1>
+     <div>
+        <span>Your full name ?</span></br>
+        <input type="text" name="name" id="name" placeholder="Write your name here...">
+     </div></br>
+     <div>
+        <span>Your email address ?</span></br>
+        <input type="email" name="name" id="name" placeholder="Write your email here...">
+     </div></br>
+     <div>
+        <!--<--- this is the select option--->
+        <span>How many people ?</span></br>
+        <select name="people" id="people" required>
+            <option value=""><---People---></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <!-- <---this is the select option--->
+     </div></br>
+     <div>
+            <span>What time ?</span></br>
+        <input type="text" name="time" id="time" placeholder="Time">
+     </div></br>
+     <div>
+        <span>What is date ?</span></br>
+        <input type="date" name="date" id="date" placeholder="date" required>
+     </div></br>
+     <div>
+        <span>Your phone number</span></br>
+        <input type="number" name="number" id="number" placeholder="Write your number here..."required>
+     </div></br>
+
+     <div>
+      <span>Number Of Ticket You Want To Book : </span>
+      
+      <button type="button" onclick="increment()">Add Ticket</button>
+      <button type="button" onclick="decrement()">Remove Ticket</button>
+     </div>
+
+     <div class="submit">
+        <button type="submit" class="btn" onclick="openPopup()">SUBMIT</button>
+        <div class="popup">
+         <img src="../img/yes.png">
+         <h2>Thank You</h2>
+         <p>Your details has been successfully submitted. Thanks!</p>
+         <button type="button" onclick="closePopup()">OK</button>
+        </div>
+     </div></br>
+   </div>
+   </form>
+   <script src="./book_now.js"></script>
+</body>
+</html>
