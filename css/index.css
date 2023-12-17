@@ -276,6 +276,11 @@ display: block;
     font-family: "Lucida Console", Courier, monospace;
   }
 
+  .content{
+    text-align: center;
+    font-size:17px;
+    font-family: 'fangsong';
+  }
 
 }
 
@@ -292,6 +297,12 @@ display: block;
     font-size: 40px;
     font-family: "Lucida Console", Courier, monospace;
   }
+
+  .content{
+    text-align: center;
+    font-size:22px;
+    font-family: 'fangsong';
+  }
 }
   
 @media screen and ( min-width:800px) and (max-width:1107px){
@@ -306,6 +317,13 @@ display: block;
     text-align: center;
     font-size: 50px;
     font-family: "Lucida Console", Courier, monospace;
+  }
+
+  
+  .content{
+    text-align: center;
+    font-size:30px;
+    font-family: 'fangsong';
   }
 }
   
