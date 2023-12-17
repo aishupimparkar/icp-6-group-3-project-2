@@ -261,13 +261,52 @@ display: block;
       cursor: pointer;
   }
 }
-@media screen and ( min-width:445px) and (max-width:654px) {
-  .india-map-img img{
+@media screen and ( min-width:480px) and (max-width:654px) {
+  
+  .explore-title{
+    font-size: 23px;
+    margin-left: 80px;
+    display: block;
+    top: -260px;
+  }
 
+  .title{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Lucida Console", Courier, monospace;
   }
 
 
+}
 
+@media screen and ( min-width:654px) and (max-width:800px){
+  .explore-title{
+    font-size: 30px;
+    margin-left: 180px;
+    display: block;
+    top: -370px;
+  }
 
+  .title{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Lucida Console", Courier, monospace;
+  }
 }
   
+@media screen and ( min-width:800px) and (max-width:1107px){
+  .explore-title{
+    font-size: 60px;
+    margin-left: 155px;
+    display: block;
+    top: -500px;
+  }
+
+  .title{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Lucida Console", Courier, monospace;
+  }
+}
+  
+
