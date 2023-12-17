@@ -1,0 +1,476 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ebf9f2 ;
+  }
+
+  nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 10;
+}
+  
+  nav .fa-solid {
+    display: none;
+  }
+
+  .fa-solid {
+    color: #000;
+}
+  
+  .brand-name {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #sideMenu{
+    padding-right: 120px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 1px 20px;
+}
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.4s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.brand-name img {
+  height: 50px;
+  padding-left: 120px;
+}
+
+.tour-dropdown li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.tour-dropdown {
+  width: 7%;
+  background: #5d5c5c;
+  position: absolute;
+  display: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+}
+
+nav ul li:hover ul.tour-dropdown {
+  display: block;
+}
+
+.brand-name img {
+  width: 90px;
+  height: 70px;
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: row;
+}
+.tab-titles {
+margin-top: 30px;
+  padding: 0 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: #a5a4a4;
+  
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+}  
+  
+  .beach{
+    width:100%;
+height:540px;
+    
+    
+  }
+  .top{
+    position: relative;
+    
+  }
+  
+  
+  .beach-title{
+    color: rgb(15, 14, 14);
+    font-size: 90px;
+    position: absolute;
+    width: 90px;
+    left: 300px;
+  
+    top: 200px;
+    margin: 0 auto;
+   padding: 30px;
+   animation: 2s anim-lineUp ease infinite;
+ 
+  }
+  .tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.4s;
+}
+.tab-links.active-link::after {
+  width: 100%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: #b54769;
+  font-size: 14px;
+}
+
+
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  body,html {
+   
+    margin:0;
+    padding:0;
+  }
+  .container {
+    margin-top: 30px;
+    background-color: #a5a4a4;
+    display:flex;
+    justify-content:start;
+    align-items:center;
+    height:100%;
+  }
+  .dropdown {
+    display:inline-block;
+    font-family:arial;
+    position:relative;
+    margin:15px;
+    font-size:16px;
+
+  }
+  .dropdown-button {
+    background:#3498db;
+    min-width:160px;
+    color:#fff;
+    letter-spacing:0.025rem;
+    box-sizing:border-box;
+    padding:10px 30px 10px 20px;
+    border-radius:0px;
+    position:relative;
+    cursor:pointer;
+    transition:background .3s ease;
+    box-shadow: 0px 0px 10px 4px #a9a8a8;;
+  }
+  .dropdown-button:hover {
+    background:#2980b9;
+    transition:background .3s ease;
+  }
+  .triangle {
+    font-size:50%;
+    position:absolute;
+    right:10px;
+    top:-2px;
+    bottom:0;
+    margin-top:auto;
+    margin-bottom:auto;
+    height:5px;
+    color:#fff;
+  }
+  .dropdown ul.active {
+    visibility:visible;
+    transition:all .3s ease;
+    transform:scaleY(1);
+    color:#333;
+  }
+  .dropdown ul {
+    visibility:hidden;
+    overflow:hidden;
+    color:#fff;
+    transform-origin:top;
+    padding:0;
+    list-style:none;
+    transform:scaleY(0);
+    box-shadow:0px 2px 6px 0 rgba(0,0,0,0.2);
+    position:absolute;
+    left:0;
+    margin-top:2px;
+    top:100%;
+    min-width:90%;
+    transition:all .3s ease;
+  }
+  .dropdown li {
+    background:#fff;
+    padding:8px 10px 8px 15px;
+    box-sizing:border-box;
+    cursor:pointer;
+    transition:background .2s ease;
+    position:relative;
+  }
+  .dropdown li.check {
+    background:#f6f6f6;
+  }
+  .dropdown li.check:after {
+    content:'';
+    position:absolute;
+    height:15px;
+    width:3px;
+    background:#ccc;
+    top:0;
+    bottom:0;
+    margin-top:auto;
+    transform:rotate(40deg);
+    margin-bottom:auto;
+    right:15px;
+  }
+  .dropdown li.check:before {
+    content:'';
+    position:absolute;
+    height:3px;
+    width:9px;
+    background:#ccc;
+    top:6px;
+    bottom:0;
+    margin-top:auto;
+    transform:rotate(40deg);
+    margin-bottom:auto;
+    right:19px;
+  }
+  .dropdown li:hover {
+    background:#f6f6f6;
+    transition: background .2s ease;
+  }
+  .map{
+    margin-left: 60px;
+    color: beige;
+    background-color: #3498db;
+    min-width:160px;
+border: none;
+    letter-spacing:0.025rem;
+    box-sizing:border-box;
+    padding:10px 30px 10px 20px;
+    border-radius:0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+.map:hover {
+  background:#2980b9;
+  transition:background .3s ease;}
+
+  
+  .card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .card-1{ 
+    width: 45%;
+    box-shadow: 0px 0px 10px 4px #a9a8a8;
+    border: 2px solid #a9a8a8;
+    background: #fff;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    
+ 
+  }
+  .card-1:hover{
+    animation: 2s  ease-out;
+    border: 1px groove brown;
+    box-shadow: 0px 0px 10px 4px #031a44;
+
+  }
+
+  .card-image{
+    height:290px;
+    width:639px;
+    
+  }
+  
+  .card-text{  
+    margin: 10px 5%;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .card-text2{
+    margin: 10px 5%;
+    font-size: 18px;
+}
+  #beach-titl{
+    text-align: center;
+    text-decoration: wavy;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: #0A0F44;
+  }
+  .glow-on-hover {
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 140px;
+  padding: 5px;
+    height: 38px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media screen and (max-width: 600px) {
+  .brand-name img {
+      padding-left: 50px;
+  }
+  nav .fa-solid {
+      display: block;
+      font-size: 25px;
+      cursor: pointer;
+      padding-right: 50px;
+  }
+
+  nav ul {
+      background: #3a3939;
+      position: fixed;
+      top: -400px;
+      width: 100%;
+      height: auto;
+      margin-top: 0;
+      padding-top: 50px;
+      transition: top 0.5s;
+      left: -10px;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 25px;
+  }
+
+  nav ul .fa-solid {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+  }
+
+  .tab-titles {
+      flex-direction: column;
+  }
+
+  .tab-links.active-link::after {
+      width: 25%;
+  }
+
+  .sub-title {
+      font-size: 50px;
+  }
+}
+
+  
