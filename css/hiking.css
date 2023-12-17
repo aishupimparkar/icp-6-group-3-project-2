@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   background-image:linear-gradient(#0A0F44, #00C1D0);
+   background-color: #ebf9f2 ;
   
   }
   nav {
@@ -118,15 +118,16 @@ height:540px;
   
   
   .beach-title{
-    color: rgb(15, 14, 14);
-    font-size: 90px;
-    position: absolute;
-    width: 90px;
-    left: 300px;
-  
-    top: 200px;
-    margin: 0 auto;
-   padding: 30px;
+    color: rgb(185, 181, 181);
+  font-size: 60px;
+  position: absolute;
+ text-align: center;
+ font-family:  Verdana, Arial, Helvetica, sans-serif;
+  top:-600px ;
+  margin: 0 auto;
+ padding: 20px;
+ margin-left: 290px;
+text-emphasis: none;
    animation: 2s anim-lineUp ease infinite;
  
   }
