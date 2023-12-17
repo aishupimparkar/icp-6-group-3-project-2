@@ -10,6 +10,49 @@
         body{
             background-image: url("https://adm.dookinternational.com/dook/images/country/XYwKYrjh1656324286.jpg");
         }
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.header {
+    
+    color: #070404;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    max-width: 600px;
+    margin: 20px auto; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #050101;
+    color: #f0ebeb;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
     </style>
 </head>
 <body>
@@ -37,61 +80,45 @@
     </nav>
 
 
+    <div class="header">
+        <h1>Book Your Tours</h1>
+    </div>
 
-<div class="main-form">
-   <form id="main-form">
-      <h1>BOOK YOUR TOUR</h1>
-     <div>
-        <span>Your full name ?</span></br>
-        <input type="text" name="name" id="name" placeholder="Write your name here...">
-     </div></br>
-     <div>
-        <span>Your email address ?</span></br>
-        <input type="email" name="name" id="name" placeholder="Write your email here...">
-     </div></br>
-     <div>
-        <!--<--- this is the select option--->
-        <span>How many people ?</span></br>
-        <select name="people" id="people" required>
-            <option value=""><---People---></option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select>
-        <!-- <---this is the select option--->
-     </div></br>
-     <div>
-            <span>What time ?</span></br>
-        <input type="text" name="time" id="time" placeholder="Time">
-     </div></br>
-     <div>
-        <span>What is date ?</span></br>
-        <input type="date" name="date" id="date" placeholder="date" required>
-     </div></br>
-     <div>
-        <span>Your phone number</span></br>
-        <input type="number" name="number" id="number" placeholder="Write your number here..."required>
-     </div></br>
+    <section>
+        <form id="bookingForm">
+            <label for="tourName">Tour Name:</label>
+            <input type="text" id="tourName" name="tourName" placeholder="Enter Tour Name Here..." required>
 
-     <div>
-      <span>Number Of Ticket You Want To Book : </span>
-      
-      <button type="button" onclick="increment()">Add Ticket</button>
-      <button type="button" onclick="decrement()">Remove Ticket</button>
-     </div>
+            <label for="fullName">Your Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Write Your Name Here..." required>
 
-     <div class="submit">
-        <button type="submit" class="btn" onclick="openPopup()">SUBMIT</button>
-        <div class="popup">
-         <img src="../img/yes.png">
-         <h2>Thank You</h2>
-         <p>Your details has been successfully submitted. Thanks!</p>
-         <button type="button" onclick="closePopup()">OK</button>
+            <label for="email">Your Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Write Your Email Here...">
+
+            <label for="tourDate">What is Tour Date:</label>
+            <input type="date" id="tourDate" name="tourDate" placeholder="Date" required>
+
+            <label for="email">Your Phone Number:</label>
+            <input type="number" id="number" name="number" placeholder="Write Your Number Here...">
+
+            <label for="numberOfPeople">How Many People:</label>
+            <input type="number" id="numberOfPeople" name="numberOfPeople" min="1" required>
+            
+        <div class="button">
+            <button type="button" onclick="submitForm()">Book Now</button>
         </div>
-     </div></br>
-   </div>
-   </form>
-   <script src="./book_now.js"></script>
+        </form>
+    </section>
+
+    <script>
+        function submitForm() {
+    // You can add your booking logic here
+    // For example, you can use AJAX to send the form data to a server
+    alert('Booking successful!'); // Placeholder for demonstration
+}
+</script>
+
 </body>
 </html>
+
+
