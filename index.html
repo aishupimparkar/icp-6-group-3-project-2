@@ -6,34 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>javascript</title>
   <link rel="stylesheet" href="./css/index.css">
-  <script src="./js/js index.js"></script>
+
 </head>
 
 <body>
-  
+
   <nav>
     <div class="brand-name">
-          <img src="./images/logo.jpg" class="logo">
-            
-        </div>
-   
+      <img src="./images/logo.jpg" class="logo">
+
+    </div>
+
     <ul id="sideMenu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="#">Category ▼ </a>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="#">Category ▼ </a>
         <ul class="tour-dropdown">
-            <li><a href="./pages/temples.html">Temple</a></li>
-            <li><a href="./pages/beaches.html">Beaches</a></li>
-            <li><a href="#">Hiking</a></li>
-            <li><a href="#">Historical</a></li>
-            <li><a href="#">Water activities</a></li>
-            <li><a href="./pages/hill-stations.html">Hill station</a></li>
+          <li><a href="./pages/temples.html">Temple</a></li>
+          <li><a href="./pages/beaches.html">Beaches</a></li>
+          <li><a href="#">Hiking</a></li>
+          <li><a href="./pages/history.html">Historical</a></li>
+          <li><a href="#">Water activities</a></li>
+          <li><a href="./pages/hill-stations.html">Hill station</a></li>
         </ul>
-        </li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Boook Tour</a></li>
-        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+      </li>
+      <li><a href="./pages/about.html">About</a></li>
+      <li><a href="./pages/contact.html">Contact</a></li>
+      <li><a href="./pages/login.html">Login</a></li>
+      <li><a href="./pages/book now.html">Boook Tour</a></li>
+      <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
     </ul>
     <i class="fa-solid fa-bars" onclick="openMenu()"></i>
 
@@ -43,7 +43,7 @@
 
 
 
-<video width="100%" autoplay muted loop id="mountain">
+  <video width="100%" autoplay muted loop id="mountain">
     <source src="./images/mountain+beaches.mp4" type="video/mp4">
   </video>
 
@@ -68,51 +68,61 @@
   </p>
 
   <div class="image-contaier">
-    <div class="card-container">
-    <img src="./images/temple2-img.jpg" class="adventure-card-image" />
-    <p>Temple</p>
-  </div>
-  
-  <div class="card-container">
-    <img src="./images/beache2-img.jpg" class="adventure-card-image" />
-    <p>Beaches</p>
-    </div>
+    
+      <a href="./pages/temples.html">
+        <div class="card-container">
+          <img src="./images/temple2-img.jpg" class="adventure-card-image" />
+      </a>
+      <p>Temple</p>
 
-    <div class="card-container">
-   <img src="./images/mountain-img.webp" class="adventure-card-image" />
-   <p>Hill station</p>
     </div>
-
-    <div class="card-container">
-   <img src="./images/hiking-img.jpg" class="adventure-card-image" /> 
-   <p>Hiking</p> 
-   </div>
      
-   
-   <div class="card-container">
-   <img src="./images/historical-img.jpg" class="adventure-card-image" />  
-   <p>Historical</p>
+    <a href="./pages/beaches.html">
+    <div class="card-container">
+      <img src="./images/beache2-img.jpg" class="adventure-card-image" />
+    </a>
+      <p>Beaches</p>
+    </div>
+
+    <a href="./pages/hill-stations.html">
+    <div class="card-container">
+      <img src="./images/mountain-img.webp" class="adventure-card-image" />
+    </a>
+      <p>Hill station</p>
     </div>
 
     
     <div class="card-container">
-   <img src="./images/water-activities.jpg" class="adventure-card-image" />
-   <p>Water Activities</p>  
- 
-   </div>
+      <img src="./images/hiking-img.jpg" class="adventure-card-image" />
+   
+      <p>Hiking</p>
+    </div>
+
+    <a href="./pages/history.html">
+    <div class="card-container">
+      <img src="./images/historical-img.jpg" class="adventure-card-image" />
+    </a>
+      <p>Historical</p>
+    </div>
+
+    <a href="./pages/beaches.html">
+    <div class="card-container">
+      <img src="./images/water-activities.jpg" class="adventure-card-image" />
+    </a>
+      <p>Water Activities</p>
 
     </div>
-    <div class="btn-container">
-    <img src="./images/learn more.jpg" class="Explore-img"/>
-   <button type="button" class="btn" >Learn More</button>
-    </div>
-    <script src="./js/js index.js"></script>
-    
-    </body>
-    
-    </html>
 
-
-
-
+  </div>
  
+  <div class="btn-container">
+    <img src="./images/explore-3.jpg" class="Explore-img" />
+    <a href="./pages/login.html"></a>
+    <button type="button" class="btn">Learn More</button>
+  </a>
+  </div>
+  <script src="./js/js index.js"></script>
+
+</body>
+
+</html>
