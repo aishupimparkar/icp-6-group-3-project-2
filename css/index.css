@@ -5,45 +5,48 @@ body {
   background-color: rgb(192, 235, 221);
 
 }
+
 nav {
- background-color: #bdd3d3;
-  box-shadow: 0px 0px 3px 1px #2b2826;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 120px;
-  z-index:10 ;
-
+  width: 100%;
+  z-index: 10;
 }
 
 nav .fa-solid {
   display: none;
 }
 
+.fa-solid {
+  color: #000;
+}
+
 .brand-name {
- align-items: start;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
-.logo{
-width: 90px;
-height: 70px;
-
+#sideMenu{
+  padding-right: 120px;
 }
-
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 3px 20px;
+  margin: 1px 20px;
 }
 
 nav ul li a {
-  color: #000000;
+  color: #060606;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
   position: relative;
   font-family: 'Poppins', sans-serif;
 }
+
 nav ul li a::after {
   content: '';
   width: 0;
@@ -54,68 +57,44 @@ nav ul li a::after {
   bottom: -6px;
   transition: 0.4s;
 }
+
 nav ul li a:hover::after {
   width: 100%;
 }
 
-.tour-dropdown li{
+.brand-name img {
+  height: 50px;
+  padding-left: 120px;
+}
+
+.tour-dropdown li {
   display: inline-block;
   list-style: none;
   margin: 10px 0;
   font-size: 18px;
 }
-.tour-dropdown{
+
+.tour-dropdown {
   width: 7%;
-  background: #bababa;
+  background: #a3a2a2;
   position: absolute;
   display: none;
   border-radius: 5px;
   padding: 10px 40px;
 }
-nav ul li:hover ul.tour-dropdown{
+
+nav ul li:hover ul.tour-dropdown {
   display: block;
 }
 
-
-.brand-name{
-  display: flex;
-  flex-direction: row;
+.brand-name img {
+  width: 90px;
+  height: 70px;
 }
 
-@media screen and (max-width: 600px) {
-  nav {
-      padding: 10px 50px;
-  }
-  nav .fa-solid {
-      display: block;
-      font-size: 25px;
-      cursor: pointer;
-  }
-
-  nav ul {
-      background: #000;
-      position: fixed;
-      top: -400px;
-      width: 100%;
-      height: auto;
-      margin-top: 0;
-      padding-top: 50px;
-      transition: top 0.5s;
-      left: -10px;
-  }
-
-  nav ul li {
-      display: block;
-      margin: 25px;
-  }
-
-  nav ul .fa-solid {
-      position: absolute;
-      top: 25px;
-      left: 25px;
-      cursor: pointer;
-  }
-
+.brand-name {
+  display: flex;
+  flex-direction: row;
 }
 #mountain{
   width: 100%;
@@ -160,6 +139,7 @@ nav ul li:hover ul.tour-dropdown{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 2px solid #ded8d5;
   cursor: pointer;
 }
 .india-map-img img:hover{
@@ -193,6 +173,11 @@ nav ul li:hover ul.tour-dropdown{
   position: relative;
   margin-top: 20px;
   border-radius: 5px;
+  border: 2px solid #cfccc8;
+  cursor: pointer;
+}
+.adventure-card-image:hover{
+  box-shadow: 2px 2px 15px 10px #313232;
 }
 
 .card-container{
@@ -242,4 +227,7 @@ display: block;
   color: wheat;
   transition: 0.5s;
   box-shadow: 1px 1px 2px 2px gray;
+}
+@media screen {
+  
 }
