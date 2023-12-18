@@ -326,10 +326,16 @@ border: none;
     background: #fff;
     margin-bottom: 50px;
     padding-bottom: 15px;
+  
     
  
   }
- 
+  .card-1:hover{
+    border: 1px groove brown;
+    box-shadow: 0px 0px 10px 4px #031a44;
+   
+  }
+  
   .card-image{
     height:290px;
     width:639px;
@@ -467,14 +473,5 @@ border: none;
       font-size: 50px;
   }
 }
-.info{
-  visibility: hidden; 
-  opacity: 0; 
-  transition: visibility 0s, opacity 0.5s;
-}
-.
-.card-1:hover .info { 
-  visibility: visible; 
-  opacity: 1; 
-  background-color: #333;
-}   
+
+  
