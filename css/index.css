@@ -262,7 +262,9 @@ display: block;
   }
 }
 @media screen and ( min-width:480px) and (max-width:654px) {
-  
+  body{
+    background-color: #ff004f;
+  }
   .explore-title{
     font-size: 23px;
     margin-left: 80px;
@@ -276,6 +278,21 @@ display: block;
     font-family: "Lucida Console", Courier, monospace;
   }
 
+  .content{
+    text-align: center;
+    font-size:17px;
+    font-family: 'fangsong';
+  }
+
+  .india-map-img img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #ded8d5;
+    cursor: pointer;
+    width: 400px;
+    
+  }
 
 }
 
@@ -292,6 +309,22 @@ display: block;
     font-size: 40px;
     font-family: "Lucida Console", Courier, monospace;
   }
+
+  .content{
+    text-align: center;
+    font-size:22px;
+    font-family: 'fangsong';
+  }
+
+  .india-map-img img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #ded8d5;
+    cursor: pointer;
+    width: 700px;
+    
+  }
 }
   
 @media screen and ( min-width:800px) and (max-width:1107px){
@@ -306,6 +339,23 @@ display: block;
     text-align: center;
     font-size: 50px;
     font-family: "Lucida Console", Courier, monospace;
+  }
+
+  
+  .content{
+    text-align: center;
+    font-size:30px;
+    font-family: 'fangsong';
+  }
+
+  .india-map-img img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #ded8d5;
+    cursor: pointer;
+    width: 1000px;
+    
   }
 }
   
