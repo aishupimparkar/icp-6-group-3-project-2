@@ -2,8 +2,6 @@ function submitForm() {
     alert('Booking successful!');
 }
 
-
-
 function quantityIncrease() {
     const quantity = document.getElementById("quantity");
     let quantityInc = parseInt(quantity.innerText);
