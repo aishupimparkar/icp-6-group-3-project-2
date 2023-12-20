@@ -2,7 +2,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #cfc9c9;
+    background-color: #ebf9f2;
     color: #000;
     font-family: 'Poppins', sans-serif;
 }
@@ -15,6 +15,9 @@ nav {
     flex-wrap: wrap;
     width: 100%;
     z-index: 10;
+    border-bottom: 1px black solid;
+    background: transparent;
+    backdrop-filter: blur(15px);
 }
 
 nav .fa-solid {
@@ -102,7 +105,7 @@ nav ul li:hover ul.tour-dropdown {
 }
 #head-img{
     width: 100%;
-    height: 500px;
+    height: 550px;
 }
 img{
     width: 100%;
@@ -113,10 +116,11 @@ img{
     font-weight: 600;
     color: #000;
     text-align: center;
+    margin: 30px auto 50px auto;
 }
 
 .tab-titles {
-    padding: 0 80px;
+    padding: 20px 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -180,6 +184,10 @@ img{
     background: #FFF;
     margin-bottom: 50px;
     padding-bottom: 15px;
+    transition: box-shadow 0.5s;
+}
+.temple-card:hover{
+    box-shadow: 0px 0px 10px 4px #031a44;
 }
 
 .temple-card img {
@@ -229,6 +237,10 @@ img{
         display: block;
         margin: 25px;
     }
+    .tour-dropdown {
+        position: absolute;
+        z-index: 999;
+    }
 
     nav ul .fa-solid {
         position: absolute;
@@ -239,6 +251,9 @@ img{
 
     .tab-titles {
         flex-direction: column;
+    }
+    .tab-links{
+        margin-bottom: 20px;
     }
 
     .tab-links.active-link::after {

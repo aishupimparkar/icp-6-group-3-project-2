@@ -1,25 +1,16 @@
-let popup = document.getElementById("popup");
-
-function openPopup(){
-    popup.classList.add("open-popup");
-
-}
-function closePopup(){
-    popup.classList.remove("open-popup");
-
+function submitForm() {
+    alert('Booking successful!');
 }
 
+function quantityIncrease() {
+    const quantity = document.getElementById("quantity");
+    let quantityInc = parseInt(quantity.innerText);
 
-function increment(){
-
-    const quantityElement = document. getElementById("quantity");
-    const quantity = parseInt(quqntityElement.innerText);
-    quantityElement.innerText = quantity + 1;
+    quantity.innerText = ++quantityInc;
 }
+function quantityDecrease() {
+    const quantity = document.getElementById("quantity");
+    let quantityDec = parseInt(quantity.innerText);
 
-function decrement(){
-
-    const quantityElement = document. getElementById("quantity");
-    const quantity = parseInt(quqntityElement.innerText);
-    quantityElement.innerText = quantity - 1;
+    quantity.innerText = --quantityDec;
 }

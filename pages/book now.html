@@ -2,100 +2,148 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Now</title>
-    <link rel="stylesheet" herf="../css/book_now.css">
-    <link rel="stylesheet" href="../css/temples.css">
-    <style type="text/css">
-        body{
-            background-image: url("https://adm.dookinternational.com/dook/images/country/XYwKYrjh1656324286.jpg");
-        }
-    </style>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Book Now</title>
+   <link rel="stylesheet" href="../css/temples.css">
+   <style type="text/css">
+      body {
+        background-image: url("../images/maldives.jpg");
+       
+      }
+
+      body {
+         font-family: 'Poppins', sans-serif;
+         margin: 0;
+         padding: 0;
+
+      }
+
+      .header {
+
+         color: #070404;
+         text-align: center;
+         padding: 0;
+      }
+
+      section {
+         max-width: 600px;
+         margin: 20px auto;
+         padding: 20px;
+         border-radius: 8px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         background: transparent;
+         backdrop-filter: blur(50px);
+      }
+
+      label {
+         display: block;
+         margin-bottom: 8px;
+         font-weight: bold;
+      }
+
+      input, select {
+         width: 100%;
+         padding: 8px;
+         margin-bottom: 16px;
+         box-sizing: border-box;
+      }
+      input{
+         border-radius: 10px;
+         background: rgb(240, 234, 221);
+      }
+
+      button {
+         background-color: #050101;
+         color: #f0ebeb;
+         padding: 0 20px;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+      }
+      .java-scr{
+         display: flex;
+         flex-direction: row;
+         margin-top: 10px;
+         justify-content: space-evenly;
+         height: 30px;
+      }
+      .quantity{
+         font-size: 30px;
+         font-weight: bold;
+         margin-top: 0px;
+      }
+      .submit button{
+         display: block ;
+         margin: 30px auto 0 auto;
+         padding: 10px 40px;
+      }
+   </style>
 </head>
 
 <body>
-   <nav>
+   <nav style="position: relative; margin-top: 5px; margin-bottom: 50px;">
       <div class="brand-name">
-         <img src="../images/logo.jpg">
+         <img src="../images/logo.png">
       </div>
       <ul id="sideMenu">
          <li><a href="../index.html">Home</a></li>
          <li><a href="./temples.html">Category ▼</a>
-            <ul class="tour-dropdown">
-               <li><a href="./temples.html">Temples</a></li>
-               <li><a href="./beaches.html">Beaches</a></li>
-               <li><a href="./hill-stations.html">Hill Stations</a></li>
-               <li><a href="./history.html">History</a></li>
-            </ul>
+             <ul class="tour-dropdown">
+                 <li><a href="./temples.html">Temples</a></li>
+                 <li><a href="./beaches.html">Beaches</a></li>
+                 <li><a href="./hill-stations.html">Hill Stations</a></li>
+                 <li><a href="./history.html">Historical</a></li>
+                 <li><a href="./wateractivities.html">Water activities</a></li>
+                 <li><a href="./hiking.html">Hiking</a></li>
+             </ul>
          </li>
          <li><a href="./about.html">About</a></li>
          <li><a href="./contact.html">Contact</a></li>
-         <li><a href="#">Login</a></li>
-         <li><a href="./book now.html">Boook Tour</a></li>
+         <li><a href="./login.html">Login</a></li>
+         <li><a href="./book now.html">Book Tour</a></li>
          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-      </ul>
+     </ul>
       <i class="fa-solid fa-bars" onclick="openMenu()"></i>
    </nav>
+   
+   <section>
+   <div class="header">
+      <h1>Book Your Tours</h1>
+   </div>
 
+      <form id="bookingForm">
+         <label for="tourName">Tour Name:</label>
+         <input type="text" id="tourName" name="tourName" placeholder="Enter Tour Name Here..." required>
 
+         <label for="fullName">Your Full Name:</label>
+         <input type="text" id="fullName" name="fullName" placeholder="Write Your Name Here..." required>
 
-   <div class="main-form">
-      <form id="main-form">
-         <h1>BOOK YOUR TOUR</h1>
-         <div>
-            <span>Your full name ?</span></br>
-            <input type="text" name="name" id="name" placeholder="Write your name here...">
-         </div></br>
-         <div>
-            <span>Your email address ?</span></br>
-            <input type="email" name="name" id="name" placeholder="Write your email here...">
-         </div></br>
-         <div>
-            <span>How many people ?</span></br>
-            <select name="people" id="people" required>
-               <option value="">select</option>
-               <option value="1">1</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-               <option value="4">4</option>
-            </select>
-         </div></br>
-         <div>
-            <span>What time ?</span></br>
-            <input type="text" name="time" id="time" placeholder="Time">
-         </div></br>
-         <div>
-            <span>What is date ?</span></br>
-            <input type="date" name="date" id="date" placeholder="date" required>
-         </div></br>
-         <div>
-            <span>Your phone number</span></br>
-            <input type="number" name="number" id="number" placeholder="Write your number here..." required>
-         </div></br>
+         <label for="email">Your Email Address:</label>
+         <input type="email" id="email" name="email" placeholder="Write Your Email Here...">
 
-         <div>
-            <span>Number Of Ticket You Want To Book : </span>
+         <label for="tourDate">What is Tour Date:</label>
+         <input type="date" id="tourDate" name="tourDate" placeholder="Date" required>
 
-            <button type="button" onclick="increment()">Add Ticket</button>
-            <button type="button" onclick="decrement()">Remove Ticket</button>
+         <label for="email">Your Phone Number:</label>
+         <input type="number" id="number" name="number" placeholder="Write Your Number Here...">
+         <span style="font-weight: bold;">Number Of Ticket You Want To Book : </span>
+         <div class="java-scr">
+            <button onclick="quantityIncrease()">Add Ticket</button>
+            <p class="quantity" id="quantity">0</p>
+            <button onclick="quantityDecrease()">Remove Ticket</button>
          </div>
 
          <div class="submit">
-            <button type="submit" class="btn" onclick="openPopup()">SUBMIT</button>
-            <div class="popup">
-               <img src="../img/yes.png">
-               <h2>Thank You</h2>
-               <p>Your details has been successfully submitted. Thanks!</p>
-               <button type="button" onclick="closePopup()">OK</button>
-            </div>
+            <button type="submit" class="btn" onclick="submitForm()">SUBMIT</button>
          </div></br>
       </form>
-   </div>
+   </section>
+
 
    <script src="./book_now.js"></script>
    <script src="../js/history-&-hill-stations.js"></script>
    <script src="https://kit.fontawesome.com/4a24678c16.js" crossorigin="anonymous"></script>
-</body>
 
+</body>
 </html>

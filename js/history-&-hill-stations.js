@@ -7,7 +7,7 @@ function closeMenu() {
 }
 
 let next = 1;
-function hillStationImg(){
+function hillStationImg() {
     const imgElement = document.getElementById("hill-station-head-img");
     if (next == 1) {
         imgElement.src = "https://www.tourmyindia.com/blog//wp-content/uploads/2020/12/Munnar-Hill-Station-Kerala.jpg";
@@ -17,7 +17,7 @@ function hillStationImg(){
         imgElement.src = "https://www.tourmyindia.com/blog//wp-content/uploads/2022/08/Best-Hill-Stations-to-Explore-in-India.jpg";
     }
 }
-function hillStationImgBef(){
+function hillStationImgBef() {
     const imgElement = document.getElementById("hill-station-head-img");
     if (next == 1) {
         imgElement.src = "https://www.tourmyindia.com/blog//wp-content/uploads/2020/12/Darjeeling-Hill-Station.jpg";
@@ -31,7 +31,7 @@ function hillStationImgBef(){
 
 
 let hist = 1;
-function historyImg(){
+function historyImg() {
     const imgElement = document.getElementById("history-head-img");
     if (hist == 1) {
         imgElement.src = "../images/taj-mahal.jpg";
@@ -41,7 +41,7 @@ function historyImg(){
         imgElement.src = "../images/konark-sun.jpg";
     }
 }
-function historyImgBef(){
+function historyImgBef() {
     const imgElement = document.getElementById("history-head-img");
     if (hist == 1) {
         imgElement.src = "../images/safdarjung-tomb.jpg";
@@ -51,4 +51,27 @@ function historyImgBef(){
         imgElement.src = "../images/taj-mahal.jpg";
         --hist;
     }
+}
+
+let more = document.getElementById("learnMoreTab");
+function openLearnMore() {
+    more.style.display = "block";
+}
+function closeLearnMore() {
+    more.style.display = "none";
+}
+
+
+const quantity = document.getElementById("quantity");
+function quantityIncrease() {
+    let quantityInc = parseInt(quantity.innerText);
+
+    quantity.innerText = ++quantityInc;
+
+}
+
+
+function changeTajImg(what) {
+    const imgTajElement = document.getElementById("changeTajImg");
+    what ? (imgTajElement.src = "../images/taj-mahal.jpg") : (imgTajElement.src = "../images/taj-mahal-back-side.jpg");
 }
