@@ -294,11 +294,7 @@ height:540px;
     background:#f6f6f6;
     transition: background .2s ease;
   }
-  .map{
-    margin-left: 60px;
-    color: beige;
-    background-color: #3498db;
-    min-width:160px;
+ 
 border: none;
     letter-spacing:0.025rem;
     box-sizing:border-box;
@@ -307,9 +303,7 @@ border: none;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
 }
-.map:hover {
-  background:#2980b9;
-  transition:background .3s ease;}
+
 
   
   .card-container{
