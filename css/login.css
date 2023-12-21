@@ -5,95 +5,99 @@
     box-sizing: border-box;
 }
 nav {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    z-index: 10;
-  }
-  
-  nav .fa-solid {
-    display: none;
-  }
-  
-  .fa-solid {
-    color: #000;
-  }
-  
-  .brand-name {
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  #sideMenu{
-    padding-right: 120px;
-  }
-  nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 1px 20px;
-  }
-  
-  nav ul li a {
-    color: #060606;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.4s;
-  }
-  
-  nav ul li a:hover::after {
-    width: 100%;
-  }
-  
-  .brand-name img {
-    height: 50px;
-    padding-left: 120px;
-  }
-  
-  .tour-dropdown li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 0;
-    font-size: 18px;
-  }
-  
-  .tour-dropdown {
-    width: 10%;
-    background: #a2a3a2;
-    position: absolute;
-    display: none;
-    border-radius: 5px;
-    padding: 10px 40px;
-  }
-  
-  nav ul li:hover ul.tour-dropdown {
-    display: block;
-  }
-  
-  .brand-name img {
-    width: 90px;
-    height: 70px;
-  }
-  
-  .brand-name {
-    display: flex;
-    flex-direction: row;
-  }
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 1px black solid;
+  background: transparent;
+  backdrop-filter: blur(15px);
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+.fa-solid {
+  color: #000;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#sideMenu{
+  padding-right: 120px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 1px 20px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.4s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.brand-name img {
+  height: 50px;
+  padding-left: 120px;
+}
+
+.tour-dropdown li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.tour-dropdown {
+  width: 7%;
+  background: #c9c6c6;
+  position: absolute;
+  display: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+}
+
+nav ul li:hover ul.tour-dropdown {
+  display: block;
+}
+
+.brand-name img {
+  width: 90px;
+  height: 70px;
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: row;
+}
+
 .container{
     width: 100%;
     height: 100vh;
@@ -210,4 +214,44 @@ form p a{
 .btn-field:hover{
   transition: 0.5s;
   box-shadow: 0 0  7px #151515;
+}
+
+@media screen and (max-width: 600px) {
+  .brand-name img {
+      padding-left: 50px;
+  }
+  nav .fa-solid {
+      display: block;
+      font-size: 25px;
+      cursor: pointer;
+      padding-right: 50px;
+  }
+
+  nav ul {
+      background: #c9c6c6;
+      position: fixed;
+      top: -400px;
+      width: 100%;
+      height: auto;
+      margin-top: 0;
+      padding-top: 50px;
+      transition: top 0.5s;
+      left: -10px;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 25px;
+  }
+  .tour-dropdown {
+      position: absolute;
+      z-index: 999;
+  }
+
+  nav ul .fa-solid {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+  }
 }
