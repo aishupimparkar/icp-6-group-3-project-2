@@ -92,4 +92,21 @@
     .before{
         right: 400px;
     }
+    #changeTajImg{
+        height: 300px;
+    }
+    .imgChange{
+        top: 33%;
+        left: 37%;
+    }
+    .imgChange1{
+        height: 40px;
+        width: 30px;
+    }
+    #learnMoreTab .infor h2{
+        font-size: 20px;
+    }
+    #learnMoreTab .infor button{
+        font-size: 13px;
+    }
 }
