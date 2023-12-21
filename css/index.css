@@ -252,67 +252,6 @@ height: 1000px;
   }
 }
 
-@media screen and (max-width:420px){
-  .explore-title{
-    font-size: 20px;
-    margin-left: 60px;
-    display: block;
-    top: -230px;
-  }
-
-  .title{
-    text-align: center;
-    font-size: 25px;
-   margin-top: -15%;
-  }
-
-  .content{
-    text-align: center;
-    font-size:15px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-
-  .india-map-img img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 330px;
-    height: 400px;
-    margin-top: 20px;
-  }
-
-  .adventure-title {
-    text-align: center;
-    font-size: 25px;
-    margin-top: 7%;
-  }
-
-  .title-content{
-    text-align: center;
-    font-size: 17px;
-    margin-top: 10px;
-  }
-
-  .Explore-img{
-    display: block;
-      width: 100%;
-      height: 240px ;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: -40px; 
-  } 
-
-  .btn{
-    position: absolute;
-    font-size: 10px;
-    margin-top: -110px;
-    display: block;
-    padding: 4px 10px;
-    margin-left: 160px;
-    
-   }  
-}
 
 @media screen and (max-width:600px){
 
@@ -376,5 +315,67 @@ height: 1000px;
     margin-left: 251px;
     
    }   
+}
+
+@media screen and (max-width:420px){
+  .explore-title{
+    font-size: 20px;
+    margin-left: 60px;
+    display: block;
+    top: -230px;
+  }
+
+  .title{
+    text-align: center;
+    font-size: 25px;
+   margin-top: -15%;
+  }
+
+  .content{
+    text-align: center;
+    font-size:15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .india-map-img img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 330px;
+    height: 400px;
+    margin-top: 20px;
+  }
+
+  .adventure-title {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 7%;
+  }
+
+  .title-content{
+    text-align: center;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+
+  .Explore-img{
+    display: block;
+      width: 100%;
+      height: 240px ;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -40px; 
+  } 
+
+  .btn{
+    position: absolute;
+    font-size: 10px;
+    margin-top: -110px;
+    display: block;
+    padding: 4px 10px;
+    margin-left: 160px;
+    
+   }  
 }
 
