@@ -103,9 +103,35 @@ nav ul li:hover ul.tour-dropdown {
   top:-600px ;
   padding: 20px;
   margin-left: 280px;
-  
+  animation: 3s anim-lineUp ease infinite;
 }
 
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+    color:#ececec;
+    -webkit-text-stroke: #1a1b1c 1px;
+  }
+  20% {
+    opacity: 0;
+    color:#e3e6e8;
+    -webkit-text-stroke: #212223 1px;
+
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+    color:#e6e8ebf9;
+    -webkit-text-stroke: #151616 1px;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    color:#e3e9edfc;
+    -webkit-text-stroke: #c4c4cb 1px;
+  }
+}
 
 .title {
   text-align: center;
