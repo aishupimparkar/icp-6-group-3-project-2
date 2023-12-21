@@ -101,7 +101,7 @@ nav {
     background-size: cover;
     position: relative;
     background-color: #ebf9f2;
-    
+  
 
 }
 .form-box{
@@ -114,7 +114,8 @@ nav {
     background:#60d299;
     padding: 50px 60px 70px;
     text-align: center;
-    border-radius: 40px;
+    border-radius: 35px;
+    
 }
 .email-icon{
     background-color: white;
@@ -142,8 +143,12 @@ nav {
     max-height: 65px;
     transition: max-height 0.5s;
     overflow: hidden;
-  
 }
+
+.input-field:hover{
+
+  transition: 0.5s;
+  box-shadow: 0 0  7px #262727;}
 
 input{
     width: 100%;
@@ -200,4 +205,9 @@ form p a{
     transition: .1s;
     border-radius: 40px;
     font-size: 17px;
+}
+
+.btn-field:hover{
+  transition: 0.5s;
+  box-shadow: 0 0  7px #151515;
 }
