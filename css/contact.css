@@ -13,12 +13,13 @@
   width: 100%;
   background:#c4f4dc;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   }
 
   .container{
-    margin-top: 50px;
+    margin: 150px 0;
   width: 85%;
   background: #fff;
   border-radius: 6px;

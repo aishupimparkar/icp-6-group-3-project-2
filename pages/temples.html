@@ -34,10 +34,8 @@
         </ul>
         <i class="fa-solid fa-bars" onclick="openMenu()"></i>
     </nav>
-
-
-
         <img src="../images/maha-Templess.jpg" id="head-img">
+        <h1 class="temple-title">TEMPLE</h1>
         <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('maharashtra'), headImg('maharashtra')">Maharashtra</p>
             <p class="tab-links" onclick="opentab('tamil-nadu'), headImg('tamil-nadu')">Tamil Nadu</p>
@@ -53,7 +51,7 @@
                     <img src="../images/shirdi-temp.png">
                     <h2>SHIRDI SAI BABA TEMPLE</h2>
                     <p>Sai Baba temple in Shirdi is one of the most famous temples in Maharashtra that is frequented by pilgrims from across the country. It is believed that Sai Baba came to this village at the age of 16 years and stayed all his life here. He even attained Samadhi here. The temple covers an area of 200 square meters and you can find Samadhi Mandir, Chavadi, Gurusthan, Lendi Baug, and many more in the temple complex today...</p>
-                    <h2 style="font-size: 20px;">Learn More</h2>
+                    <h2 style="font-size: 20px;" onclick="openLearnMore()">Learn More</h2>
                 </div>
                 <div class="temple-card">
                     <img src="https://www.revv.co.in/blogs/wp-content/uploads/2021/02/Trimbakeshwar-Jyotirlinga.jpg">
@@ -245,6 +243,27 @@
             </div>
         </div>
 
+        <div id="learnMoreTab">
+            <i class="fa-solid fa-xmark closeLearn" onclick="closeLearnMore()"></i>
+            <img src="../images/shirdi-temp.png"  id="changeTajImg">
+            <div class="imgChange">
+                <img src="../images/shirdi-temp.png" class="imgChange1" onclick="changeTajImg(true)">
+                <img src="https://www.holidify.com/images/bgImages/SHIRDI.jpg" class="imgChange1"  onclick="changeTajImg(false)">
+            </div>
+            <div class="infor">
+                <h2>SHIRDI SAI BABA TEMPLE</h2>
+                <p>Sai Baba of Shirdi (c. 1838? – 15 October 1918),[2] also known as Shirdi Sai Baba, was an Indian spiritual master and fakir, considered to be a saint,[3] revered by both Hindu and Muslim devotees during and after his lifetime.
+
+                    According to accounts from his life, Sai Baba preached the importance of "realisation of the self" and criticised "love towards perishable things". His teachings concentrated on a moral code of love, forgiveness, helping others, charity, contentment, inner peace, and devotion to God and Guru.
+                    
+                    Sai Baba condemned discrimination based on religion or caste. He had both Hindu and Muslim followers, but when pressed on his own religious affiliations, he refused to identify himself with one to the exclusion of the other.[4] His teachings combined elements of Hinduism and Islam: he gave the Hindu name Dwarakamayi to the mosque in which he lived,[5] practised both Hindu and Muslim rituals, and taught using words and figures that drew from both traditions. According to the Shri Sai Satcharita, a hagiography written shortly after his death, his Hindu devotees believed him to be an incarnation of the Hindu deity</p>
+                <b style="font-size: 40px;" id="quantity">0</b>&nbsp;&nbsp;<i class="fa-solid fa-thumbs-up"
+                    onclick="quantityIncrease()"></i>
+                <br>
+                <a href="./book now.html"><button type="button">Click Here To Book Tour</button></a>
+            </div>
+        </div>
+
 
         <div class="footer">
             <h1 class="footer-tital">Wonderlust</h1>
@@ -253,12 +272,13 @@
                     <div class="footer-col">
                         <h4 class="h4">Wonderlust</h4>
                         <ul class="ul">
-                            <li class="li"><a class="footer-a" href="#">Temples</a></li>
-                            <li class="li"><a class="footer-a" href="#">Beaches</a></li>
-                            <li class="li"><a class="footer-a" href="#">Hill Stations</a></li>
-                            <li class="li"><a class="footer-a" href="#">Hiking</a></li>
-                            <li class="li"><a class="footer-a" href="#">Historical</a></li>
-                            <li class="li"><a class="footer-a" href="#">Water Activities</a></li>
+                            <li class="li"><a class="footer-a" href="../pages/temples.html">Temples</a></li>
+                            <li class="li"><a class="footer-a" href="../pages/beaches.html">Beaches</a></li>
+                            <li class="li"><a class="footer-a" href="../pages/hill-stations.html">Hill Stations</a></li>
+                            <li class="li"><a class="footer-a" href="../pages/hiking.html">Hiking</a></li>
+                            <li class="li"><a class="footer-a" href="../pages/history.html">Historical</a></li>
+                            <li class="li"><a class="footer-a" href="../pages/wateractivities.html">Water Activities</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="footer-col">
@@ -272,9 +292,9 @@
                     <div class="footer-col">
                         <h4 class="h4">About Us</h4>
                         <ul class="ul">
-                            <li class="li"><a class="footer-a" href="#">Booking </a></li>
-                            <li class="li"><a class="footer-a" href="#">About us</a></li>
-                            <li class="li"><a class="footer-a" href="#">Contact Us</a></li>
+                            <li class="li"><a class="footer-a" href="../pages/book now.html">Booking </a></li>
+                            <li class="li"><a class="footer-a" href="../pages/about.html">About us</a></li>
+                            <li class="li"><a class="footer-a" href="../pages/contact.html">Contact Us</a></li>
                             <li class="li"><a class="footer-a" href="#">Team Member</a></li>
                             <li class="li"><a class="footer-a" href="#">payment options</a></li>
                         </ul>
@@ -285,7 +305,7 @@
                             <li class="li"><a class="footer-a" href="#">FAQ</a></li>
                             <li class="li"><a class="footer-a" href="#">Terms & Condition</a></li>
                             <li class="li"><a class="footer-a" href="#">Privacy Policy</a></li>
-    
+
                         </ul>
                     </div>
                     <div class="footer-col">
@@ -297,7 +317,7 @@
                             <li class="li"><a class="footer-a" href="#">Trading Trip Package</a></li>
                         </ul>
                     </div>
-    
+
                     <div class="footer-col">
                         <h4 class="h4">follow us</h4>
                         <div class="footer-social-links">
@@ -310,13 +330,13 @@
                 </div>
             </div>
             <hr /><br>
-    
+
             <h2>Regestered office</h2>
             <p>037, Prasad Colony Ward no. 3, Buttibori, Nagpur-441108. Person who may be contacted in case of any
                 compliance related queries or grievances
                 : Shabbaz Rangrez (Shabbaz.a@iWonderlust.in)</p><br>
             <hr /><br>
-    
+
             <div>
                 <p class="cen">&copy; Wonderlust. All rights reserved.</p>
             </div>
