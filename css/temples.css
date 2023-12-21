@@ -336,10 +336,11 @@ img{
     nav ul li {
         display: block;
         margin: 25px;
-    }
+    }   
     .tour-dropdown {
         position: absolute;
-        z-index: 999;
+        position: fixed;
+        z-index: 10;
     }
 
     nav ul .fa-solid {
@@ -366,5 +367,22 @@ img{
 
     .temple-card {
         width: 95%;
+    }
+    #changeTajImg{
+        height: 300px;
+    }
+    .imgChange{
+        top: 33%;
+        left: 37%;
+    }
+    .imgChange1{
+        height: 40px;
+        width: 30px;
+    }
+    #learnMoreTab .infor h2{
+        font-size: 20px;
+    }
+    #learnMoreTab .infor button{
+        font-size: 13px;
     }
 }
