@@ -77,11 +77,15 @@
   font-size: 23px;
   font-weight: 600;
   color: #3e2093;
+  margin-top: 30px;
   }
   .right-side .input-box{
   height: 50px;
   width: 100%;
   margin: 12px 0;
+  }
+  .right-side p{
+    margin-bottom: 50px;
   }
   .right-side .input-box input,
   .right-side .input-box textarea{
@@ -95,9 +99,6 @@
   padding: 0 15px;
   resize: none;
   }
-  .right-side .message-box{
-  min-height: 110px;
-  }
   .right-side .input-box textarea{
   padding-top: 6px;
   }
@@ -105,7 +106,7 @@
   display: inline-block;
   margin-top: 12px;
   }
-  .right-side .button input[type="button"]{
+  .right-side .button button{
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -115,8 +116,9 @@
   background: #3e2093;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: -20px;
   }
-  .button input[type="button"]:hover{
+  .button button:hover{
   background: #5029bc;
   }
   @media (max-width: 799px) {
