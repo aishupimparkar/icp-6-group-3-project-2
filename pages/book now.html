@@ -68,7 +68,7 @@
          justify-content: space-evenly;
          height: 30px;
       }
-      .quantity{
+      #quantity{
          font-size: 30px;
          font-weight: bold;
          margin-top: 0px;
@@ -128,10 +128,11 @@
          <label for="email">Your Phone Number:</label>
          <input type="number" id="number" name="number" placeholder="Write Your Number Here...">
          <span style="font-weight: bold;">Number Of Ticket You Want To Book : </span>
+         
          <div class="java-scr">
-            <button onclick="quantityIncrease()">Add Ticket</button>
+            <button type="button" onclick="quantityIncrease()">Add Ticket</button>
             <p class="quantity" id="quantity">0</p>
-            <button onclick="quantityDecrease()">Remove Ticket</button>
+            <button type="button" onclick="quantityDecrease()">Remove Ticket</button>
          </div>
 
          <div class="submit">
