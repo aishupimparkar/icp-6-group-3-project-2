@@ -1,3 +1,5 @@
+
+
 body {
   padding: 0;
   margin: 0;
@@ -14,9 +16,11 @@ nav {
   flex-wrap: wrap;
   width: 100%;
   z-index: 10;
-  border-bottom: 1px black solid;
-  background: transparent;
-  backdrop-filter: blur(15px);
+  border-bottom: 1px #515050 solid;
+  background-color: rgba(165, 164, 164, 0.6);
+  height: 65px;
+  top: 8px;
+  z-index: 10;
 }
 
 nav .fa-solid {
@@ -90,6 +94,15 @@ nav ul li:hover ul.tour-dropdown {
   display: block;
 }
 
+.brand-name img {
+  width: 90px;
+  height: 70px;
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: row;
+}
   
   .beach{
     width:100%;
@@ -142,88 +155,7 @@ height:540px;
       -webkit-text-stroke: #fdfdfe 1px;
     }
   }
-  nav {
-    &.primary-navigation {
-      
-      display: block;
-    margin-top: 30px;
-    padding:10px;
-      text-align: center;
-      font-size: 16px;
-      background-color: grey;
   
-      ul li {
-        list-style: none;
-        margin: 0 auto;
-        border-left: 2px solid #3ca0e7;
-        display: inline-block;
-        padding: 0 30px;
-        position: relative;
-        text-decoration: none;
-        text-align: center;
-        font-family: arvo;
-      }
-  
-      li a {
-        color: black;
-      }
-  
-      li a:hover {
-        color: #3ca0e7;
-      }
-  
-      li:hover {
-        cursor: pointer;
-      }
-  
-      ul li ul {
-        visibility: hidden;
-        opacity: 0;
-        position: absolute;
-  padding-left: 0;
-        left: 0;
-        display: none;
-        background: white;
-      }
-  
-      ul li:hover > ul,
-      ul li ul:hover {
-        visibility: visible;
-        opacity: 1;
-        display: block;
-        min-width: 250px;
-        text-align: left;
-        padding-top: 20px;
-        box-shadow: 0px 3px 5px -1px #ccc;
-      }
-  
-      ul li ul li {
-        clear: both;
-        width: 100%;
-        text-align: left;
-        margin-bottom: 20px;
-        border-style: none;
-      }
-  
-      ul li ul li a:hover {
-        padding-left: 10px;
-        border-left: 2px solid #3ca0e7;
-        transition: all 0.3s ease;
-      }
-    }
-  }
-  
-  a {
-  
-      text-decoration: none;
-  
-      &:hover {
-          color: #3CA0E7;
-      }
-   
-  }
-  
-   ul li ul li a { transition: all 0.5s ease; }
 
   #beach-titl{
    
@@ -312,14 +244,6 @@ margin-left: 250px;
   }
 
   
- 
-  
-  
-  
-
-  
-    
-  
   .front {
     background-size: cover;
     
@@ -336,8 +260,6 @@ margin-left: 250px;
     
     }
     
-   
-  
     .rating {
     
       color: rgba(255, 255, 255, 0.8);
@@ -503,16 +425,97 @@ margin-left: 250px;
     font-family: Georgia, 'Times New Roman', Times, serif;
   
   }
- 
+  nav {
+    &.primary-navigation {
+      height: 150px;
+      display: block;
+    margin-top: 600px;
+    padding:10px;
+      text-align: center;
+      font-size: 16px; 
+      background-color: grey;
     
-
+      ul li {
+        list-style: none;
+        margin: 0 auto;
+        border-left: 2px solid #3ca0e7;
+        display: inline-block;
+        padding: 0 30px;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        font-family: arvo;
+      }
+  
+      li a {
+        color: black;
+      }
+  
+      li a:hover {
+        color: #0c0c0d;
+      }
+  
+      li:hover {
+        cursor: pointer;
+      }
+  
+      ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+  padding-left: 0;
+        left: 0;
+        display: none;
+        background: white;
+      }
+  
+      ul li:hover > ul,
+      ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        min-width: 250px;
+        text-align: left;
+        padding-top: 20px;
+        box-shadow: 0px 3px 5px -1px #ccc;
+      }
+  
+      ul li ul li {
+        clear: both;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+        border-style: none;
+      }
+  
+      ul li ul li a:hover {
+        padding-left: 10px;
+        border-left: 2px solid #0d0d0d;
+        transition: all 0.3s ease;
+      
+    }
+  }
+  
+  a {
+  
+      text-decoration: none;
+  
+      &:hover {
+          color: #0c0d0d;
+      }
+   
+  }
+  
+   ul li ul li a { transition: all 0.5s ease; }
+    
+  }
 /*copy*/
 
 
 
 .wrapper {
   
-  margin-top: 240px;
+  margin-top: 100px;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;justify-content: space-evenly;
@@ -799,86 +802,10 @@ margin-left: 250px;
     }
   }
   
+
   
-  nav {
-    &.primary-navigation {
-      margin-top:30px;
-      display: block;
-    
-      font-size: 16px;
   
-      ul li {
-        list-style: none;
-        margin: 0 auto;
-        border-left: 2px solid #3ca0e7;
-        display: inline-block;
-        padding: 0 30px;
-        position: relative;
-        text-decoration: none;
-    
-        font-family: arvo;
-      }
-  
-      li a {
-        color: black;
-      }
-  
-      li a:hover {
-        color: #3ca0e7;
-      }
-  
-      li:hover {
-        cursor: pointer;
-      }
-  
-      ul li ul {
-        visibility: hidden;
-        opacity: 0;
-        position: absolute;
-  padding-left: 0;
-        left: 0;
-        display: none;
-        background: white;
-      }
-  
-      ul li:hover > ul,
-      ul li ul:hover {
-        visibility: visible;
-        opacity: 1;
-        display: block;
-        min-width: 250px;
-        text-align: left;
-        padding-top: 20px;
-        box-shadow: 0px 3px 5px -1px #ccc;
-      }
-  
-      ul li ul li {
-        clear: both;
-        width: 100%;
-        text-align: left;
-        margin-bottom: 20px;
-        border-style: none;
-      }
-  
-      ul li ul li a:hover {
-        padding-left: 10px;
-        border-left: 2px solid #3ca0e7;
-        transition: all 0.3s ease;
-      }
-    }
-  }
-  
-  a {
-  
-      text-decoration: none;
-  
-      &:hover {
-          color: #3CA0E7;
-      }
-   
-  }
-  
-   ul li ul li a { transition: all 0.5s ease; }
+
   
   
   #beach-titl{
@@ -895,54 +822,89 @@ margin-left: 250px;
     text-shadow: 1px 10px 10px rgb(3, 60, 57);
 
   }
-  
-
-@media screen and (max-width: 600px) {
-  .brand-name img {
-      padding-left: 50px;
-  }
-  nav .fa-solid {
-      display: block;
-      font-size: 25px;
-      cursor: pointer;
-      padding-right: 50px;
-  }
-
-  nav ul {
-      background: #3a3939;
-      position: fixed;
-      top: -400px;
-      width: 100%;
-      height: auto;
-      margin-top: 0;
-      padding-top: 50px;
-      transition: top 0.5s;
-      left: -10px;
-  }
-
-  nav ul li {
-      display: block;
-      margin: 25px;
-  }
-
-  nav ul .fa-solid {
-      position: absolute;
-      top: 25px;
-      left: 25px;
-      cursor: pointer;
-  }
-
-  .tab-titles {
-      flex-direction: column;
-  }
-
-  .tab-links.active-link::after {
-      width: 25%;
-  }
-
-  .sub-title {
-      font-size: 50px;
-  }
 }
 
-  
+  @media screen and (max-width: 600px) {
+    .brand-name img {
+        padding-left: 50px;
+    }
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        padding-right: 50px;
+    }
+
+    nav ul {
+        background: #c9c6c6;
+        position: fixed;
+        top: -400px;
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        padding-top: 50px;
+        transition: top 0.5s;
+        left: -10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }   
+    .tour-dropdown {
+        position: absolute;
+        position: fixed;
+        z-index: 10;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .tab-titles {
+        flex-direction: column;
+    }
+    .tab-links{
+        margin-bottom: 20px;
+    }
+
+    .tab-links.active-link::after {
+        width: 25%;
+    }
+
+    .sub-title {
+        font-size: 50px;
+    }
+    #head-img{
+        height: 300px;
+    }
+    .temple-title{
+        font-size: 50px;
+        top: 20%;
+    }
+
+
+    .temple-card {
+        width: 95%;
+    }
+    #changeTajImg{
+        height: 300px;
+    }
+    .imgChange{
+        top: 33%;
+        left: 37%;
+    }
+    .imgChange1{
+        height: 40px;
+        width: 30px;
+    }
+    #learnMoreTab .infor h2{
+        font-size: 20px;
+    }
+    #learnMoreTab .infor button{
+        font-size: 13px;
+    }
+}
