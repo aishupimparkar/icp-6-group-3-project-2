@@ -176,12 +176,12 @@ nav ul li:hover ul.tour-dropdown {
 }
 .btn-1{
   width: 70px;
-  left: 1250px;
+ right: 580px;
   position: absolute;
 }
 .btn-2{
   width: 70px;
-  left: 20px;
+  left: 580px;
   position: absolute;
 }
 
@@ -355,12 +355,12 @@ nav ul li:hover ul.tour-dropdown {
   }
   .btn-1{
     width: 70px;
-    left: 1000px;
+    right:500px ;
     position: absolute;
   }
   .btn-2{
     width: 70px;
-    left: 20px;
+    left: 450px;
     position: absolute;
   }
   .india-map-img h2 {
@@ -413,12 +413,12 @@ nav ul li:hover ul.tour-dropdown {
   
   .btn-1{
     width: 70px;
-    left: 490px;
+    right: 220px;
     position: absolute;
   }
   .btn-2{
     width: 70px;
-    left: 20px;
+    left: 220px;
     position: absolute;
   }
 
@@ -432,7 +432,7 @@ nav ul li:hover ul.tour-dropdown {
   .title {
     text-align: center;
     font-size: 40px;
-    margin-top: -10%;
+    margin-top: 7%;
   }
 
   .content {
@@ -451,8 +451,8 @@ nav ul li:hover ul.tour-dropdown {
 
   .title-content {
     text-align: center;
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 24px;
+    margin-top: 30px;
   }
 
 
@@ -494,8 +494,8 @@ nav ul li:hover ul.tour-dropdown {
   .content {
     text-align: center;
     font-size: 15px;
-    margin-bottom: 10px;
-    margin-top: 70px;
+    margin-bottom: 10p;
+    margin-top: 20px;
   }
 
   .adventure-title {
@@ -540,12 +540,12 @@ nav ul li:hover ul.tour-dropdown {
   }
   .btn-1{
     width: 70px;
-    left: 310px;
+   right: 130px;
     position: absolute;
   }
   .btn-2{
     width: 70px;
-    left: 20px;
+    left: 130px;
     position: absolute;
   }
 
@@ -685,7 +685,7 @@ nav ul li:hover ul.tour-dropdown {
 @media screen and (max-width:600px) {
 
   .text-conatiner {
-    margin-top: -10px;
+    margin-top: -9px;
     color: #0f0f0f;
     background: transparent;
     backdrop-filter: blur(3px);
@@ -710,7 +710,7 @@ nav ul li:hover ul.tour-dropdown {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 50px;
   
   }
