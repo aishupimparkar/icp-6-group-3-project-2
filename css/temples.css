@@ -365,6 +365,14 @@ img{
     .sub-title {
         font-size: 50px;
     }
+    #head-img{
+        height: 300px;
+    }
+    .temple-title{
+        font-size: 50px;
+        top: 20%;
+    }
+
 
     .temple-card {
         width: 95%;

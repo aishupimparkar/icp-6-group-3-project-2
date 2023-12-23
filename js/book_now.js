@@ -4,7 +4,6 @@ function submitForm() {
 
 let quantity = document.getElementById("quantity");
 function quantityDecrease() {
-    alert('hello');
     let quantityDec = parseInt(quantity.innerText);
     quantity.innerText = --quantityDec;
 }

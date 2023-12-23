@@ -22,5 +22,20 @@
     .before{
         right: 400px;
     }
+    #hill-station-head-img{
+        height: 300px;
+    }
+    
+    #history-head-img{
+        height: 300px;
+    }
+    .next-btn{
+        font-size: 30px;
+        right: 40px;
+        top: 20%;
+    }
+    .before{
+        right: 90%;
+    }
     
 }
