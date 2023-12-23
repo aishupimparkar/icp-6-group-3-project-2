@@ -2,7 +2,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #cfc9c9;
+    background-color: #ebf9f2;
     color: #000;
     font-family: 'Poppins', sans-serif;
 }
@@ -15,6 +15,10 @@ nav {
     flex-wrap: wrap;
     width: 100%;
     z-index: 10;
+    border-bottom: 1px #515050 solid;
+    background-color: rgba(165, 164, 164, 0.6);
+    height: 65px;
+    top: 8px;
 }
 
 nav .fa-solid {
@@ -102,7 +106,7 @@ nav ul li:hover ul.tour-dropdown {
 }
 #head-img{
     width: 100%;
-    height: 500px;
+    height: 550px;
 }
 img{
     width: 100%;
@@ -113,10 +117,11 @@ img{
     font-weight: 600;
     color: #000;
     text-align: center;
+    margin: 30px auto 50px auto;
 }
 
 .tab-titles {
-    padding: 0 80px;
+    padding: 20px 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -172,6 +177,40 @@ img{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+.temple-title{
+    color: rgb(15, 14, 14);
+    font-size: 80px;
+    position: absolute;
+    top: 30%;
+    left:10%;
+   animation: 2s anim-lineUp ease infinite;
+}
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+      color:#0d4c90;
+      -webkit-text-stroke: #063d62 1px;
+    }
+    20% {
+      opacity: 0;
+      color:#1772b2;
+      -webkit-text-stroke: #063554 1px;
+  
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+      color:#01060bf9;
+      -webkit-text-stroke: #092d45 1px;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+      color:#010b13fc;
+      -webkit-text-stroke: #fdfdfe 1px;
+    }
+  }
 
 .temple-card {
     width: 45%;
@@ -180,6 +219,10 @@ img{
     background: #FFF;
     margin-bottom: 50px;
     padding-bottom: 15px;
+    transition: box-shadow 0.5s;
+}
+.temple-card:hover{
+    box-shadow: 0px 0px 10px 4px #031a44;
 }
 
 .temple-card img {
@@ -199,6 +242,73 @@ img{
     margin: 10px 5%;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#learnMoreTab{
+    position: absolute;
+    width: 84%;
+    height: auto;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    top: 100%;
+    margin-left: 8%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px #a9a8a8;
+    padding: 20px;
+    display: none;
+}
+.closeLearn{
+    position: absolute;
+    left: -40px;
+    top: -5px;
+}
+#learnMoreTab i{
+    font-size: 40px;
+    cursor: pointer;
+}
+#learnMoreTab img{
+    width: 100%;
+}
+.imgChange{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 55%;
+    left: 37%;
+}
+.imgChange1{
+    height: 80px;
+    width: 60px;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.imgChange1:hover{
+    transform: scale(1.07);
+    transition: 0.2s;
+}
+.infor{
+    margin-left: 30px;
+    text-align: justify;
+}
+#learnMoreTab .infor h2{
+    font-size: 30px;
+    margin: 20px 0;
+}
+#learnMoreTab .infor button{
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 5px 25px;
+    background: aquamarine;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px #a9a8a8;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#learnMoreTab .infor button:hover{
+    background: transparent;
 }
 
 @media screen and (max-width: 600px) {
@@ -227,6 +337,11 @@ img{
     nav ul li {
         display: block;
         margin: 25px;
+    }   
+    .tour-dropdown {
+        position: absolute;
+        position: fixed;
+        z-index: 10;
     }
 
     nav ul .fa-solid {
@@ -239,6 +354,9 @@ img{
     .tab-titles {
         flex-direction: column;
     }
+    .tab-links{
+        margin-bottom: 20px;
+    }
 
     .tab-links.active-link::after {
         width: 25%;
@@ -247,8 +365,33 @@ img{
     .sub-title {
         font-size: 50px;
     }
+    #head-img{
+        height: 300px;
+    }
+    .temple-title{
+        font-size: 50px;
+        top: 20%;
+    }
+
 
     .temple-card {
         width: 95%;
+    }
+    #changeTajImg{
+        height: 300px;
+    }
+    .imgChange{
+        top: 33%;
+        left: 37%;
+    }
+    .imgChange1{
+        height: 40px;
+        width: 30px;
+    }
+    #learnMoreTab .infor h2{
+        font-size: 20px;
+    }
+    #learnMoreTab .infor button{
+        font-size: 13px;
     }
 }

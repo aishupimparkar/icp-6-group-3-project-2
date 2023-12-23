@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up form</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/temples.css">
+</head>
+<body>
+    <nav style="padding-right: 20px;">
+        <div class="brand-name">
+            <img src="../images/logo.png">
+        </div>
+        <ul id="sideMenu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./temples.html">Category ▼</a>
+                <ul class="tour-dropdown">
+                    <li><a href="./temples.html">Temples</a></li>
+                    <li><a href="./beaches.html">Beaches</a></li>
+                    <li><a href="./hill-stations.html">Hill Stations</a></li>
+                    <li><a href="./history.html">Historical</a></li>
+                    <li><a href="./wateractivities.html">Water activities</a></li>
+                    <li><a href="./hiking.html">Hiking</a></li>
+                </ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./book now.html">Book Tour</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+    
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Login</h1>
+            <form>
+                <div class="input-grup">
+                    <div class="input-field" id="namefield">
+                        <img class="email-icon" src="../images/user3.jpg"/>
+                        <input type="text" placeholder=" Username">
+                    </div>
+
+                    <div class="input-field">
+                        <img class="email-icon" src="../images/password4.jpg"/>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-field">
+                        <img class="email-icon" src="../images/lock1.jpg"/>
+                        <input type="password" placeholder="password">
+                    </div>
+                    
+                </div>
+                   <div class="btn-field">
+                       <button type="button" onclick="alert('you have been successfully login')">login</button>
+                   </div>
+
+                   
+                
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/temples.js"></script>
+    <script src="https://kit.fontawesome.com/4a24678c16.js" crossorigin="anonymous"></script>
+</body>
+</html>

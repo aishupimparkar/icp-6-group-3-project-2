@@ -1,217 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Now</title>
-    <link rel="stylesheet" herf="../css/book_now.css">
-    <link rel="stylesheet" href="../css/temples.css">
-    <style type="text/css">
-        body{
-            background-image: url("https://i.pinimg.com/originals/73/70/00/737000df4b8e04719d38b1b4537ebad2.jpg");
-        }
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-   
-}
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Book Now</title>
+   <link rel="stylesheet" href="../css/temples.css">
+   <style type="text/css">
+      body {
+         background-color: #ebf9f2;
 
-.header {
+      }
 
-    color: #070404;
-    text-align: center;
-    padding: 5px;
-}
+      body {
+         font-family: 'Poppins', sans-serif;
+         margin: 0;
+         padding: 0;
 
-section {
-    max-width: 600px;
-    margin: 20px auto; 
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+      }
 
-label {
-    display: block;
-    margin-bottom: 8px;
-}
+      .header {
 
-input, select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-}
-.quantity-btn-container {
-    display: flex;
-    justify-content:space-around;
-}
-.submit{
-    align-items: center;
-    justify-content:flex-start;
-    display: flex;
-    width: 100%;
-    height:100%;
-    padding-top: 50px;
- }
-.btn{
-    width: 80px;
-    height: 30px;
-}
-.btn:hover{
-    font-family: ;
-    width: 90px;
-    background-color: black;
-    color: #fff;
-}
+         color: #fa3917;
+         text-align: center;
+         padding: 0;
+      }
 
- .popup{
-    width: 400px;
-    background: #fff;
-    border-radius: 6px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%,-50%)scale(0.1);
-    text-align: center;
-    padding:0 30px 30px;
-    color: #333;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
- }
- .open-popup{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%,-50%)scale(1);
-}
+      section {
+         max-width: 600px;
+         margin: 80px auto;
+         padding: 20px;
+         border-radius: 8px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         background:  #fff;
+         backdrop-filter: blur(50px);
+      }
 
+      label {
+         display: block;
+         margin-bottom: 8px;
+         font-weight: bold;
+      }
 
- .popup-img{
-    width: 100px;
-    margin-top: -50px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-}
-.popup h2{
-    font-size: 30px;
-    font-weight: 500;
-}
-.popup button{
-    width: 100%;
-    margin-top: 50px;
-    padding: 10px 0;
-    background-color: #6fd649;
-    color: #fff;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
+      input,
+      select {
+         width: 100%;
+         padding: 8px;
+         margin-bottom: 16px;
+         box-sizing: border-box;
+      }
 
-    </style>
+      input {
+         border-radius: 10px;
+         background: hsl(240, 70%, 96%);
+      }
+
+      button {
+         background-color: #fa3917;
+         color: #fff;
+         padding: 0 20px;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+      }
+
+      button:hover {
+         background-color: #f14527;
+      }
+
+      .java-scr {
+         display: flex;
+         flex-direction: row;
+         margin-top: 10px;
+         justify-content: space-evenly;
+         height: 30px;
+      }
+
+      #quantity {
+         font-size: 30px;
+         font-weight: bold;
+         margin-top: 0px;
+      }
+
+      .submit button {
+         display: block;
+         margin: 30px auto 0 auto;
+         padding: 10px 40px;
+      }
+      @media screen and (max-width: 600px) {
+         section {
+         margin: 20px auto;
+         width: 380px;
+      }
+      }
+   </style>
 </head>
+
 <body>
-   <nav style="position: relative; margin-top: 5px; margin-bottom: 50px;">
+   <nav style="position: relative;">
       <div class="brand-name">
-        <img src="../images/logo.jpg">
+         <img src="../images/logo.png">
       </div>
       <ul id="sideMenu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./temples.html">Category ▼</a>
-          <ul class="tour-dropdown">
-            <li><a href="./temples.html">Temples</a></li>
-            <li><a href="./beaches.html">Beaches</a></li>
-            <li><a href="./hill-stations.html">Hill Stations</a></li>
-            <li><a href="./history.html">History</a></li>
-          </ul>
-        </li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="./book now.html">Boook Tour</a></li>
-        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+         <li><a href="../index.html">Home</a></li>
+         <li><a href="./temples.html">Category ▼</a>
+            <ul class="tour-dropdown">
+               <li><a href="./temples.html">Temples</a></li>
+               <li><a href="./beaches.html">Beaches</a></li>
+               <li><a href="./hill-stations.html">Hill Stations</a></li>
+               <li><a href="./history.html">Historical</a></li>
+               <li><a href="./wateractivities.html">Water activities</a></li>
+               <li><a href="./hiking.html">Hiking</a></li>
+            </ul>
+         </li>
+         <li><a href="./about.html">About</a></li>
+         <li><a href="./contact.html">Contact</a></li>
+         <li><a href="./login.html">Login</a></li>
+         <li><a href="./book now.html">Book Tour</a></li>
+         <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
       </ul>
       <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-    </nav>
+   </nav>
+
+   <section>
+      <div class="header">
+         <h1>Book Your Tours</h1>
+      </div>
+
+      <form id="bookingForm">
+         <label for="tourName">Tour Name:</label>
+         <input type="text" id="tourName" name="tourName" placeholder="Enter Tour Name Here..." required>
+
+         <label for="fullName">Your Full Name:</label>
+         <input type="text" id="fullName" name="fullName" placeholder="Write Your Name Here..." required>
+
+         <label for="email">Your Email Address:</label>
+         <input type="email" id="email" name="email" placeholder="Write Your Email Here...">
+
+         <label for="tourDate">What is Tour Date:</label>
+         <input type="date" id="tourDate" name="tourDate" placeholder="Date" required>
+
+         <label for="email">Your Phone Number:</label>
+         <input type="number" id="number" name="number" placeholder="Write Your Number Here...">
+         <span style="font-weight: bold;">Number Of Ticket You Want To Book : </span>
+
+         <div class="java-scr">
+            <button type="button" onclick="quantityIncrease()">Add Ticket</button>
+            <p class="quantity" id="quantity">0</p>
+            <button type="button" onclick="quantityDecrease()">Remove Ticket</button>
+         </div>
+
+         <div class="submit">
+            <button type="submit" class="btn" onclick="submitForm()">SUBMIT</button>
+         </div></br>
+      </form>
+   </section>
 
 
-    <div class="header">
-        <h1>Book Your Tours</h1>
-    </div>
-
-    <section>
-        <form id="bookingForm">
-            <label for="tourName">Tour Name:</label>
-            <input type="text" id="tourName" name="tourName" placeholder="Enter Tour Name Here..." required>
-
-            <label for="fullName">Your Full Name:</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Write Your Name Here..." required>
-
-            <label for="email">Your Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="Write Your Email Here...">
-
-            <label for="tourDate">What is Tour Date:</label>
-            <input type="date" id="tourDate" name="tourDate" placeholder="Date" required>
-
-            <label for="email">Your Phone Number:</label>
-            <input type="number" id="number" name="number" placeholder="Write Your Number Here...">
-
-            <label for="numberOfPeople">How Many People:</label>
-            <input type="number" id="numberOfPeople" name="numberOfPeople" placeholder="Number of People Here..." min="1" required>
-
-            <label for="numberofTicket">Number Of Ticket You Want To Book:</label>
-            <div class="quantity-btn-container">
-                <button type="button" onclick="decrement()">
-                  -
-                </button>
-                <span id="quantity">1</span>
-                <button type="button" onclick="increment()">
-                  +
-                </button>
-            </div>
-            
-            <div class="submit">
-                <button type="submit" class="btn" onclick="openPopup()">SUBMIT</button>
-                <div class="popup">
-                 <img src="../img/yes.png">
-                 <h2>Thank You</h2>
-                 <p>Your details has been successfully submitted. Thanks!</p>
-                 <button type="button" onclick="closePopup()">OK</button>
-                </div>
-        </form>
-    </section>
-
-    <script>
-let popup = document.getElementById("popup");
-
-function openPopup(){
-    popup.classList.add("open-popup");
-
-}
-function closePopup(){
-    popup.classList.remove("open-popup");
-
-}
-
-function increment(){
-
-const quantityElement = document. getElementById("quantity");
-const quantity = parseInt(quqntityElement.innerText);
-quantityElement.innerText = quantity + 1;
-}
-
-function decrement(){
-
-const quantityElement = document. getElementById("quantity");
-const quantity = parseInt(quqntityElement.innerText);
-quantityElement.innerText = quantity - 1;
-}
-</script>
+   <script src="../js/book_now.js"></script>
+   <script src="../js/history-&-hill-stations.js"></script>
+   <script src="https://kit.fontawesome.com/4a24678c16.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
-
-

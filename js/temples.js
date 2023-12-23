@@ -47,3 +47,23 @@ function headImg(name) {
     }
 }
 
+
+
+let more = document.getElementById("learnMoreTab");
+function openLearnMore() {
+    more.style.display = "block";
+}
+function closeLearnMore() {
+    more.style.display = "none";
+}
+const quantity = document.getElementById("quantity");
+function quantityIncrease() {
+    let quantityInc = parseInt(quantity.innerText);
+
+    quantity.innerText = ++quantityInc;
+
+}
+function changeTajImg(what) {
+    const imgTajElement = document.getElementById("changeTajImg");
+    what ? (imgTajElement.src = "../images/shirdi-temp.png") : (imgTajElement.src = "https://www.holidify.com/images/bgImages/SHIRDI.jpg");
+}
