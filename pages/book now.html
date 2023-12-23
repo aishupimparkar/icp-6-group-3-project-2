@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/temples.css">
     <style type="text/css">
         body{
-            background-image: url("https://adm.dookinternational.com/dook/images/country/XYwKYrjh1656324286.jpg");
+            background-image: url("https://i.pinimg.com/originals/73/70/00/737000df4b8e04719d38b1b4537ebad2.jpg");
         }
 body {
     font-family: 'Poppins', sans-serif;
@@ -18,10 +18,10 @@ body {
 }
 
 .header {
-    
+
     color: #070404;
     text-align: center;
-    padding: 0;
+    padding: 5px;
 }
 
 section {
@@ -43,14 +43,72 @@ input, select {
     margin-bottom: 16px;
     box-sizing: border-box;
 }
+.quantity-btn-container {
+    display: flex;
+    justify-content:space-around;
+}
+.submit{
+    align-items: center;
+    justify-content:flex-start;
+    display: flex;
+    width: 100%;
+    height:100%;
+    padding-top: 50px;
+ }
+.btn{
+    width: 80px;
+    height: 30px;
+}
+.btn:hover{
+    font-family: ;
+    width: 90px;
+    background-color: black;
+    color: #fff;
+}
 
-button {
-    background-color: #050101;
-    color: #f0ebeb;
-    padding: 10px 20px;
-    border: none;
+ .popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding:0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+ }
+ .open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+
+ .popup-img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+.popup h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
     border-radius: 4px;
     cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
     </style>
@@ -102,19 +160,54 @@ button {
             <input type="number" id="number" name="number" placeholder="Write Your Number Here...">
 
             <label for="numberOfPeople">How Many People:</label>
-            <input type="number" id="numberOfPeople" name="numberOfPeople" min="1" required>
+            <input type="number" id="numberOfPeople" name="numberOfPeople" placeholder="Number of People Here..." min="1" required>
+
+            <label for="numberofTicket">Number Of Ticket You Want To Book:</label>
+            <div class="quantity-btn-container">
+                <button type="button" onclick="decrement()">
+                  -
+                </button>
+                <span id="quantity">1</span>
+                <button type="button" onclick="increment()">
+                  +
+                </button>
+            </div>
             
-        <div class="button">
-            <button type="button" onclick="submitForm()">Book Now</button>
-        </div>
+            <div class="submit">
+                <button type="submit" class="btn" onclick="openPopup()">SUBMIT</button>
+                <div class="popup">
+                 <img src="../img/yes.png">
+                 <h2>Thank You</h2>
+                 <p>Your details has been successfully submitted. Thanks!</p>
+                 <button type="button" onclick="closePopup()">OK</button>
+                </div>
         </form>
     </section>
 
     <script>
-        function submitForm() {
-    // You can add your booking logic here
-    // For example, you can use AJAX to send the form data to a server
-    alert('Booking successful!'); // Placeholder for demonstration
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+
+}
+
+function increment(){
+
+const quantityElement = document. getElementById("quantity");
+const quantity = parseInt(quqntityElement.innerText);
+quantityElement.innerText = quantity + 1;
+}
+
+function decrement(){
+
+const quantityElement = document. getElementById("quantity");
+const quantity = parseInt(quqntityElement.innerText);
+quantityElement.innerText = quantity - 1;
 }
 </script>
 
