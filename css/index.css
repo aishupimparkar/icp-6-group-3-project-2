@@ -417,7 +417,7 @@ nav ul li:hover ul.tour-dropdown {
 @media screen and (max-width:420px) {
   .explore-title {
     font-size: 20px;
-    margin-left: 60px;
+    margin-left: 70px;
     display: block;
     top: -230px;
   }
@@ -465,6 +465,18 @@ nav ul li:hover ul.tour-dropdown {
     margin-left: 160px;
   }
 
+  .home-card p {
+    top: 30%;
+    left: 25%;
+    display: block;
+    background: transparent;
+    padding: 5px 15px;
+    backdrop-filter: blur(3px);
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+
 
 
 }
@@ -475,6 +487,7 @@ nav ul li:hover ul.tour-dropdown {
   background: transparent;
   backdrop-filter: blur(3px);
   background-color: #7878784d;
+
 }
 
 .text {
@@ -488,6 +501,7 @@ nav ul li:hover ul.tour-dropdown {
   text-align: center;
   font-family: cursive;
   margin-top: -130px;
+
 }
 
 .text-img {
@@ -497,12 +511,10 @@ nav ul li:hover ul.tour-dropdown {
   margin-left: auto;
   margin-right: auto;
   border-radius: 9px;
-  transition: transform 0.5s;
+  
 }
 
-.text-conatiner:hover {
-  transform: translateY(-10px);
-}
+
 
 .dis-img-container {
   display: flex;
@@ -800,7 +812,7 @@ nav ul li:hover ul.tour-dropdown {
     font-size: 15px;
     margin-top: -150px;
     padding: 6px 8px;
-    margin-left: 105px;
+    margin-left: 90px;
     border-radius: 19px;
   }
 
