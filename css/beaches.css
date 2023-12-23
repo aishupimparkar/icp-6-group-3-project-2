@@ -243,15 +243,6 @@ margin-left: 250px;
       100% { background-position: 0 0; }
   }
 
-  
- 
-  
-  
-  
-
-  
-    
-  
   .front {
     background-size: cover;
     
@@ -835,6 +826,22 @@ margin-left: 250px;
 }
 
   @media screen and (max-width: 600px) {
+    .cards{
+      width:400px;
+      height:400px;
+    }
+.h2{
+  font-size: 20px;
+}
+nav{
+  &.primary-navigation{
+    text-align: start;
+
+  }
+  .beach-titl{
+    font-size: 40px;
+  }
+}
     .brand-name img {
         padding-left: 50px;
     }
