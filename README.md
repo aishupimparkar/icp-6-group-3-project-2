@@ -15,8 +15,10 @@ like beaches, hiking, historical places, water activities etc.<br>
 
 
 <h2>Images of our website</h2><br>
-<img src="./img-1.png">
+<img src="[def]: /img-5.png" width="45%" height="45%" >
 <img src="./img-2.png">
 <img src="./img-3.png">
 <br>
+
+
 
