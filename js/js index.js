@@ -14,8 +14,7 @@ function mapImg() {
         ++next;
     }
     else if (next == 1) {
-      
- imgElement.src = "../images/dal-lake-1.jpg";
+      imgElement.src = "../images/dal-lake-2.jpg";
     }
 }
 
