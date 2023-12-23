@@ -8,8 +8,8 @@
    <link rel="stylesheet" href="../css/temples.css">
    <style type="text/css">
       body {
-        background-image: url("../images/maldives.jpg");
-       
+         background-image: url("../images/maldives.jpg");
+
       }
 
       body {
@@ -42,13 +42,15 @@
          font-weight: bold;
       }
 
-      input, select {
+      input,
+      select {
          width: 100%;
          padding: 8px;
          margin-bottom: 16px;
          box-sizing: border-box;
       }
-      input{
+
+      input {
          border-radius: 10px;
          background: rgb(240, 234, 221);
       }
@@ -61,30 +63,36 @@
          border-radius: 4px;
          cursor: pointer;
       }
-      button:hover{
+
+      button:hover {
          background-color: #f14527;
       }
-      .java-scr{
+
+      .java-scr {
          display: flex;
          flex-direction: row;
          margin-top: 10px;
          justify-content: space-evenly;
          height: 30px;
       }
-      #quantity{
+
+      #quantity {
          font-size: 30px;
          font-weight: bold;
          margin-top: 0px;
       }
-      .submit button{
-         display: block ;
+
+      .submit button {
+         display: block;
          margin: 30px auto 0 auto;
          padding: 10px 40px;
       }
-
-      
-
-
+      @media screen and (max-width: 600px) {
+         section {
+         margin: 20px auto;
+         width: 380px;
+      }
+      }
    </style>
 </head>
 
@@ -96,28 +104,28 @@
       <ul id="sideMenu">
          <li><a href="../index.html">Home</a></li>
          <li><a href="./temples.html">Category ▼</a>
-             <ul class="tour-dropdown">
-                 <li><a href="./temples.html">Temples</a></li>
-                 <li><a href="./beaches.html">Beaches</a></li>
-                 <li><a href="./hill-stations.html">Hill Stations</a></li>
-                 <li><a href="./history.html">Historical</a></li>
-                 <li><a href="./wateractivities.html">Water activities</a></li>
-                 <li><a href="./hiking.html">Hiking</a></li>
-             </ul>
+            <ul class="tour-dropdown">
+               <li><a href="./temples.html">Temples</a></li>
+               <li><a href="./beaches.html">Beaches</a></li>
+               <li><a href="./hill-stations.html">Hill Stations</a></li>
+               <li><a href="./history.html">Historical</a></li>
+               <li><a href="./wateractivities.html">Water activities</a></li>
+               <li><a href="./hiking.html">Hiking</a></li>
+            </ul>
          </li>
          <li><a href="./about.html">About</a></li>
          <li><a href="./contact.html">Contact</a></li>
          <li><a href="./login.html">Login</a></li>
          <li><a href="./book now.html">Book Tour</a></li>
          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-     </ul>
+      </ul>
       <i class="fa-solid fa-bars" onclick="openMenu()"></i>
    </nav>
-   
+
    <section>
-   <div class="header">
-      <h1>Book Your Tours</h1>
-   </div>
+      <div class="header">
+         <h1>Book Your Tours</h1>
+      </div>
 
       <form id="bookingForm">
          <label for="tourName">Tour Name:</label>
@@ -135,7 +143,7 @@
          <label for="email">Your Phone Number:</label>
          <input type="number" id="number" name="number" placeholder="Write Your Number Here...">
          <span style="font-weight: bold;">Number Of Ticket You Want To Book : </span>
-         
+
          <div class="java-scr">
             <button type="button" onclick="quantityIncrease()">Add Ticket</button>
             <p class="quantity" id="quantity">0</p>
@@ -149,9 +157,10 @@
    </section>
 
 
-   <script src="./book_now.js"></script>
+   <script src="../js/book_now.js"></script>
    <script src="../js/history-&-hill-stations.js"></script>
    <script src="https://kit.fontawesome.com/4a24678c16.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
