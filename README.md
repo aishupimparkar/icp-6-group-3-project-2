@@ -1,5 +1,5 @@
 <h2>Title:<h2><br>
-<h4><p> wounderlust is a tourist website that is designed for people to explore india .</p></h4><br>
+<p> wounderlust is a tourist website that is designed for people to explore india .</p><br>
 
 <h2>Introduction:<h2>
 <h4>
@@ -15,6 +15,8 @@ like beaches, hiking, historical places, water activities etc.<br>
 
 
 <h2>Images of our website</h2><br>
-<img src="./img-1.png" width="48%" height="48%" >
-
+<img src="./img-1.png">
+<img src="./img-2.png">
+<img src="./img-3.png">
+<br>
 

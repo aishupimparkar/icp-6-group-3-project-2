@@ -144,7 +144,7 @@ nav ul li:hover ul.tour-dropdown {
   text-align: center;
   font-size: 50px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-top: 7%;
+  margin-top: 8%;
 
 
 }
@@ -174,31 +174,31 @@ nav ul li:hover ul.tour-dropdown {
   box-shadow: 2px 2px 10px 5px #313232;
   transform: translateY(-10px);
 }
-
-.next-btn {
-  color: #fff;
-  font-size: 60px;
+.btn-1{
+  width: 70px;
+  left: 1250px;
   position: absolute;
-  right: 50px;
-  top: 300%;
-  cursor: pointer;
 }
-
-.before {
-  right: 95%;
+.btn-2{
+  width: 70px;
+  left: 20px;
+  position: absolute;
 }
 
 .india-map-img h2 {
   margin-left: 100px;
-  font-size: 60px;
-  margin-top: -500px;
+  font-size: 75px;
+  margin-top: -460px;
   position: absolute;
   color: #0f0f0f;
+  background: transparent;
+  backdrop-filter: blur(3px);
+  background-color: #e3dbdb2e;
 }
 
 .india-map-img h5 {
-  font-size: 30px;
-  margin-top: -400px;
+  font-size: 40px;
+  margin-top: -330px;
   color: #fbf9f9;
   position: absolute;
   margin-left: 90px;
@@ -206,8 +206,8 @@ nav ul li:hover ul.tour-dropdown {
 
 .india-map-img p {
   text-align: center;
-  font-size: 30px;
-  margin-top: -350px;
+  font-size: 35px;
+  margin-top: -270px;
   color: #030303;
   position: absolute;
   margin-left: 90px;
@@ -215,9 +215,9 @@ nav ul li:hover ul.tour-dropdown {
 
 .india-map-img h3 {
   text-align: center;
-  font-size: 24px;
-  margin-top: -320px;
-  color: #fbf9f9;
+  font-size: 40px;
+  margin-top: -240px;
+  color: #080707;
   position: absolute;
   margin-left: 90px;
 }
@@ -225,10 +225,10 @@ nav ul li:hover ul.tour-dropdown {
 .dis-btn-1 {
   position: absolute;
   font-size: 20px;
-  margin-top: -250px;
+  margin-top: -180px;
   display: block;
   padding: 10px 15px;
-  margin-left: 125px;
+  margin-left: 100px;
   background-color: #fa3917;
   border: 1px solid #151414;
   cursor: pointer;
@@ -353,11 +353,74 @@ nav ul li:hover ul.tour-dropdown {
     display: block;
     top: -450px;
   }
+  .btn-1{
+    width: 70px;
+    left: 1000px;
+    position: absolute;
+  }
+  .btn-2{
+    width: 70px;
+    left: 20px;
+    position: absolute;
+  }
+  .india-map-img h2 {
+    margin-left: 100px;
+    font-size: 55px;
+    margin-top: -460px;
+  }
+  
+  .india-map-img h5 {
+    font-size: 30px;
+    margin-top: -360px;
+    color: #fbf9f9;
+    position: absolute;
+    margin-left: 90px;
+  }
+  
+  .india-map-img p {
+    text-align: center;
+    font-size: 35px;
+    margin-top: -310px;
+    color: #030303;
+    position: absolute;
+    margin-left: 90px;
+  }
+  
+  .india-map-img h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: -270px;
+    color: #080707;
+    position: absolute;
+    margin-left: 90px;
+  }
+
+  .dis-btn-1 {
+    font-size: 20px;
+    margin-top: -200px;
+    display: block;
+    padding: 10px 15px;
+    margin-left: 100px;
+  }
 
 }
 
 
 @media screen and (max-width:600px) {
+ 
+  
+  
+  
+  .btn-1{
+    width: 70px;
+    left: 490px;
+    position: absolute;
+  }
+  .btn-2{
+    width: 70px;
+    left: 20px;
+    position: absolute;
+  }
 
   .explore-title {
     font-size: 30px;
@@ -425,14 +488,14 @@ nav ul li:hover ul.tour-dropdown {
   .title {
     text-align: center;
     font-size: 25px;
-    margin-top: -1%;
+    margin-top: -5%;
   }
 
   .content {
     text-align: center;
     font-size: 15px;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 70px;
   }
 
   .adventure-title {
@@ -475,9 +538,16 @@ nav ul li:hover ul.tour-dropdown {
     font-size: 25px;
     font-weight: bold;
   }
-  
-
-
+  .btn-1{
+    width: 70px;
+    left: 310px;
+    position: absolute;
+  }
+  .btn-2{
+    width: 70px;
+    left: 20px;
+    position: absolute;
+  }
 
 }
 
@@ -514,8 +584,6 @@ nav ul li:hover ul.tour-dropdown {
   
 }
 
-
-
 .dis-img-container {
   display: flex;
   flex-direction: row;
@@ -542,10 +610,6 @@ nav ul li:hover ul.tour-dropdown {
 .dis-img-card :hover {
   transform: translateY(-10px);
 }
-
-
-
-
 
 .dis-img-card h2 {
   margin-left: 100px;
@@ -800,7 +864,7 @@ nav ul li:hover ul.tour-dropdown {
   .next-btn {
     font-size: 60px;
     right: 10px;
-    top: 380%;
+    top: 400%;
     
   }
 
@@ -949,51 +1013,43 @@ nav ul li:hover ul.tour-dropdown {
     margin-right: auto;
     border: 2px solid #ded8d5;
     cursor: pointer;
-    height: 50vh;
+    height: 45vh;
     width: 100%;
     margin-top: 60px;
 
   }
 
-  .next-btn {
-    font-size: 60px;
-    right: 20px;
-    top: 325%;
-  }
-
-  .before {
-    right: 85%;
-  }
+  
 
   .india-map-img h2 {
-    margin-left: 70px;
+    margin-left: 50px;
     font-size: 25px;
-    margin-top: -280px;
+    margin-top: -240px;
   }
 
   .india-map-img h5 {
     font-size: 15px;
-    margin-top: -240px;
-    margin-left: 70px;
+    margin-top: -200px;
+    margin-left: 50px;
   }
 
   .india-map-img p {
     font-size: 17px;
-    margin-top: -200px;
-    margin-left: 70px;
+    margin-top: -180px;
+    margin-left: 50px;
   }
 
   .india-map-img h3 {
     font-size: 15px;
-    margin-top: -190px;
-    margin-left: 70px;
+    margin-top: -170px;
+    margin-left: 50px;
   }
 
   .dis-btn-1 {
     font-size: 15px;
-    margin-top: -150px;
+    margin-top: -140px;
     padding: 6px 8px;
-    margin-left: 90px;
+    margin-left: 50px;
     border-radius: 19px;
   }
 

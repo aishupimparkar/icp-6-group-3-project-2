@@ -6,26 +6,12 @@ function closeMenu() {
     sidemeu.style.top = "-400px";
 }
 
-let next = 1;
-function mapImg() {
-    let imgElement = document.getElementById("india-map");
-    if (next == 0) {
-        imgElement.src = "../images/dal-lake-2.jpg";
-        ++next;
-    }
-    else if (next == 1) {
-      imgElement.src = "../images/dal-lake-2.jpg";
-    }
+function rightImg() {
+    const nextElement = document.getElementById("india-map")
+    nextElement.src = "./images/dal-lake-2.jpg";
 }
 
-function mapImgBef() {
-    let imgElement = document.getElementById("india-map");
-    if (next == 1) {
-        imgElement.src = "";
-        next = 1;
-    }
-    else if (next == 2) {
-        imgElement.src = "../images/dal-lake-2.jpg";
-        --next;
-    }
+function leftImg() {
+    const nextElement = document.getElementById("india-map")
+    nextElement.src = "./images/dal-lake-5.jpg";
 }
